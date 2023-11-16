@@ -1,3 +1,36 @@
+# Creating NFT on Ethereum with Mintology
+Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
+
+Mintology API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
+
+Project Management: Details on creating, managing, and deploying NFT projects​​.
+
+Mintable Wallets: Explains the process of creating and managing Mintable Wallets, allowing users to claim private key custody​​.
+
+Preminting NFTs: Describes the benefits and process of preparing NFT metadata and assets before on-chain minting​​.
+
+IMX (Immutable X) Endpoints: Focuses on creating and managing NFTs on the Immutable X Layer 2 scaling solution for Ethereum​​.
+
+Pre-requisites: Outlines the necessary steps and requirements for using Mintology APIs effectively​​​​.
+
+Quickstart Guide: Provides a beginner's guide to getting started with Mintology APIs, including basic pre-requisites and project creation​​​​.
+
+Preminting NFTs and Mintable Wallets: Further elaborates on the preminting process and the utility of Mintable Wallets​​​​.
+
+These guides are aimed at enabling users to create and manage no-cost NFTs on Ethereum, offering a detailed insight into the functionalities and processes of the Mintology platform.
+
+
+
+# Quickstart Guide
+
+## Getting Started with Mintology APIs
+
+Welcome to the Mintology APIs! As you embark on your journey to integrate and interact with our robust suite of APIs, there are some key items and information you'll need to have on hand. We've designed our APIs with ease of use in mind, ensuring a smooth onboarding process for developers.
+
+## Getting started
+
+
+
 # Mintology API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
@@ -158,14 +191,6 @@ The following section outlines the other essential pre-requisites you'll require
 ---------------------------------------------
 
 
-
-# Quickstart Guide
-
-## Getting Started with Mintology APIs
-
-Welcome to the Mintology APIs! As you embark on your journey to integrate and interact with our robust suite of APIs, there are some key items and information you'll need to have on hand. We've designed our APIs with ease of use in mind, ensuring a smooth onboarding process for developers.
-
-## Getting started
 
 ### Basic Pre-requisites
 
