@@ -47,6 +47,12 @@ Welcome to the Mintology APIs! As you embark on your journey to integrate and in
 
 Ready to dive into the world of NFTs? **[Sign up for Mintology](https://mintology.app)** today and transform your business with the power of blockchain technology. Embrace innovation and unlock new revenue streams with our comprehensive NFT solutions. 
 
+### Chat with a Mintology Expert
+
+For personalized guidance and support, chat with our specially trained ChatGPT, a Mintology Developer Support Expert. This AI-powered assistant can provide detailed answers to your queries, helping you make the most of Mintology's features.
+
+**[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience
+
 # Mintology API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
