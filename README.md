@@ -27,8 +27,6 @@ These guides are aimed at enabling users to create and manage no-cost NFTs on Et
 
 Welcome to the Mintology APIs! As you embark on your journey to integrate and interact with our robust suite of APIs, there are some key items and information you'll need to have on hand. We've designed our APIs with ease of use in mind, ensuring a smooth onboarding process for developers.
 
-## Getting started
-
 
 
 # Mintology API Overview
