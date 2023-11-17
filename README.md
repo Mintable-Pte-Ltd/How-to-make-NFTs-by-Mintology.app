@@ -1,4 +1,5 @@
-<html><h1>Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
+<!-- SEO TAGS: NFT, Ethereum, Mintology, API, Digital Assets, Blockchain, Non-Fungible Tokens -->
+<html><h1>💡 Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
 <div align="center">
 <img src="https://dashboard.mintology.app/svgs/mintology-logo-alt.svg" alt="Mintology Logo"/>
 <a href="https://mintology.app"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=mintology.app&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
@@ -10,24 +11,26 @@
 </div>
 </html>
 
-# Creating NFT on Ethereum with Mintology - What is Mintology?
+# Creating NFT on Ethereum with Mintology - 🤔 What is Mintology?
 Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
 
-Mintology API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
+Mintology 🔍 API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
 
-Project Management: Details on creating, managing, and deploying NFT projects​​.
+🙋🏻 Minting NFTs: Describes how to use the API to easily Mint NFTs on Ethereum without a gas fee. 
 
-Mintable Wallets: Explains the process of creating and managing Mintable Wallets, allowing users to claim private key custody​​.
+📈 Project Management: Details on creating, managing, and deploying NFT projects​​.
 
-Preminting NFTs: Describes the benefits and process of preparing NFT metadata and assets before on-chain minting​​.
+🔐 Mintable Wallets: Explains the process of creating and managing 🔐 Mintable Wallets, allowing users to claim private key custody​​.
 
-IMX (Immutable X) Endpoints: Focuses on creating and managing NFTs on the Immutable X Layer 2 scaling solution for Ethereum​​.
+🖼️ Preminting NFTs: Describes the benefits and process of preparing NFT metadata and assets before on-chain minting​​.
 
-Pre-requisites: Outlines the necessary steps and requirements for using Mintology APIs effectively​​​​.
+❎ IMX (Immutable X) Endpoints: Focuses on creating and managing NFTs on the Immutable X Layer 2 scaling solution for Ethereum​​.
 
-Quickstart Guide: Provides a beginner's guide to getting started with Mintology APIs, including basic pre-requisites and project creation​​​​.
+✔️  Pre-requisites: Outlines the necessary steps and requirements for using Mintology APIs effectively​​​​.
 
-Preminting NFTs and Mintable Wallets: Further elaborates on the preminting process and the utility of Mintable Wallets​​​​.
+🚀 Quickstart Guide: Provides a beginner's guide to getting started with Mintology APIs, including basic pre-requisites and project creation​​​​.
+
+🖼️ Preminting NFTs and 🔐 Mintable Wallets: Further elaborates on the preminting process and the utility of 🔐 Mintable Wallets​​​​.
 
 These guides are aimed at enabling users to create and manage no-cost NFTs on Ethereum, offering a detailed insight into the functionalities and processes of the Mintology platform.
 
@@ -37,9 +40,10 @@ These guides are aimed at enabling users to create and manage no-cost NFTs on Et
 Mintology offers a dynamic platform for businesses to leverage NFTs creatively, not just as images but as versatile digital assets. This guide provides insights into:
 
 - **API Integration:** Easy to understand API calls for minting and managing NFTs.
-- **Project Management:** In-depth guidance for launching and handling NFT projects.
-- **Mintable Wallets:** Create and control user wallets, ensuring private key custody.
-- **Preminting NFTs:** Prepare NFT metadata efficiently for a seamless on-chain minting experience.
+  **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee. 
+- **📈 Project Management:** In-depth guidance for launching and handling NFT projects.
+- **🔐 Mintable Wallets:** Create and control user wallets, ensuring private key custody.
+- **🖼️ Preminting NFTs:** Prepare NFT metadata efficiently for a seamless on-chain minting experience.
 - **IMX Integration:** Utilize Immutable X for enhanced Ethereum transactions.
 
 #### **Why Choose Mintology?**
@@ -49,7 +53,7 @@ Mintology offers a dynamic platform for businesses to leverage NFTs creatively, 
 3. **Versatility:** Supports various types of NFTs, including interactive and multimedia.
 4. **Scalability:** Leverage Immutable X for high-volume, low-cost transactions.
 
-# Quickstart Guide
+# 🚀 Quickstart Guide
 
 ## Getting Started with Mintology APIs
 
@@ -65,7 +69,7 @@ For personalized guidance and support, chat with our specially trained ChatGPT, 
 
 **[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience
 
-# Mintology API Overview
+# Mintology 🔍 API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
 
@@ -77,7 +81,7 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/authorize).
 2. **[Mint](https://docs.mintology.app/reference/mint)**:
    - **Purpose**: Facilitates the minting process of NFTs directly into a user's wallet.
-   - **Compatibility**: Supports both custom Mintable Wallets and standard cryptocurrency wallets.
+   - **Compatibility**: Supports both custom 🔐 Mintable Wallets and standard cryptocurrency wallets.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/mint).
 3. **[Claim](https://docs.mintology.app/reference/claim)**:
    - **Purpose**: Grants a complimentary NFT to the user's wallet.
@@ -105,7 +109,7 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Action**: Launches a specified project for token minting.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-deploy).
 
-### Mintable Wallets
+### 🔐 Mintable Wallets
 
 1. **[Create](https://docs.mintology.app/reference/custodial-wallets-create)**:
    - **Action**: Establishes a new Mintable Wallet and Mintable account, enabling users to claim private key custody.
@@ -120,7 +124,7 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Action**: Irrevocably deletes the private key from Mintology's systems post user custody claim of their Mintable Wallet.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-remove)​`.
 
-### Preminting NFTs
+### 🖼️ Preminting NFTs
 
 1. **[List](https://docs.mintology.app/reference/premints-list)**:
    - **Action**: Yields a list of premint items, arrayed by updated date with latest premints at the forefront.
@@ -189,17 +193,17 @@ The following section outlines the other essential pre-requisites you'll require
 - **Description**: The public address of an Ethereum wallet.
 - **How to Obtain**: Available within the cryptocurrency wallet application.
 
-**Mintable Wallet** (If utilizing Mintable Wallets feature):
+**Mintable Wallet** (If utilizing 🔐 Mintable Wallets feature):
 
 - **Description**: A special type of wallet created on Mintology that allows users to claim custody of their private keys.
-- **How to Obtain**: Generated via the [Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API.
+- **How to Obtain**: Generated via the [🔐 Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API.
 
-**Ethereum Layer 1 Account** (If utilizing IMX Endpoints):
+**Ethereum Layer 1 Account** (If utilizing 🌐 IMX Endpoints):
 
 - **Description**: An account on the main Ethereum blockchain.
 - **How to Obtain**: Available within the cryptocurrency wallet application.
 
-**Immutable X Layer 2 Account** (If utilizing IMX Endpoints):
+**Immutable X Layer 2 Account** (If utilizing 🌐 IMX Endpoints):
 
 - **Description**: An account on the Immutable X Layer 2 scaling solution for Ethereum.
 - **How to Obtain**: Created via the [Register IMX User endpoint](https://docs.mintology.app/reference/imx-register) of the Mintology API.
@@ -207,7 +211,7 @@ The following section outlines the other essential pre-requisites you'll require
 **Metadata** (If pre-minting or updating metadata):
 
 - **Description**: Information describing the NFTs including attributes like name, image, animation_url, etc.
-- **How to Prepare**: As per the [Preminting NFTs](https://docs.mintology.app/reference/premints) and [Metadata Update](https://docs.mintology.app/reference/info-metadata) endpoints documentation.
+- **How to Prepare**: As per the [🖼️ Preminting NFTs](https://docs.mintology.app/reference/premints) and [Metadata Update](https://docs.mintology.app/reference/info-metadata) endpoints documentation.
 
 **OTP** (One-Time Password) (If exporting Mintable Wallet):
 
@@ -318,11 +322,11 @@ You can also create a project though the [Mintology web app](https://dashboard.m
 
 With a project created, you can now proceed to do any of the following, you can follow the recommended flow in the given order:
 
-- [Premint NFTs]()
-- [Create Mintable Wallets]()
+- [🖼️ Premint NFTs]()
+- [Create 🔐 Mintable Wallets]()
 - [Mint and Claim NFTs]()
 - [NFT Metadata]()
-- [Token Gating]() (you will need claimed or minted NFTs for this)
+- [✋ Token Gating]() (you will need claimed or minted NFTs for this)
 - [Immutable X Integration]()
 
 
@@ -333,7 +337,7 @@ With a project created, you can now proceed to do any of the following, you can 
 
 
 
-# Preminting NFTs
+# 🖼️ Preminting NFTs
 
 Pre-minting is the process of preparing NFT metadata and assets before the actual on-chain minting happens.
 
@@ -362,7 +366,7 @@ Note: We also offer a 10 year guarantee for data hosted on our server
 
 ### Preminting NFT
 
-You can find the API documentation under **[Premints](https://docs.mintology.app/reference/premints)**.
+You can find the API documentation under **[🖼️ Premints](https://docs.mintology.app/reference/premints)**.
 
 Here's how you can create a premint NFT:
 
@@ -437,11 +441,11 @@ Let us know if you have any other questions!
 
 
 
-# Mintable Wallets
+# 🔐 Mintable Wallets
 
 Once you have preminted NFTs, you would need to create wallets for your users to store the NFTs. Mintology provides a way to create custodial wallets, where users can later claim custody of their private keys. This process also creates a Mintable account for the users.
 
-## What are Mintable Wallets and how do they work
+## What are 🔐 Mintable Wallets and how do they work
 
 ### The Issue
 
@@ -457,7 +461,7 @@ Some users might get curious and want to dive deeper, deciding to take charge of
 
 ## How to use the APIs
 
-**IMPORTANT**: Before you start using the APIs, make sure that you have enabled Mintable Wallets on your Settings page on [Mintology web app](https://dashboard.mintology.app)
+**IMPORTANT**: Before you start using the APIs, make sure that you have enabled 🔐 Mintable Wallets on your Settings page on [Mintology web app](https://dashboard.mintology.app)
 
 Below are the steps to create a custodial wallet:
 
@@ -564,7 +568,7 @@ Letting a user claim custody of their wallet is a bit complex, do reach out to [
 
 
 
-# Minting and Claiming NFTs
+# 🙋🏻 Minting and Claiming NFTs
 
 **IMPORTANT**: Before you start using the APIs, make sure that you have deployed your project and enabled Claiming and Minting on your Project Dashboard page on [Mintology web app](https://dashboard.mintology.app).
 
@@ -575,7 +579,7 @@ Once the wallets are set up for your users, you can proceed to mint or claim NFT
 ### Mint
 
 Use the `/mint` endpoint to mint the NFT, including metadata as an object in the request body.
-This API endpoint is designed for minting NFTs straight into a user's wallet. Ideal for selling NFTs, targeted airdrops, or minting collectibles. Supports both custom Mintable Wallets and standard crypto wallets.
+This API endpoint is designed for minting NFTs straight into a user's wallet. Ideal for selling NFTs, targeted airdrops, or minting collectibles. Supports both custom 🔐 Mintable Wallets and standard crypto wallets.
 
 ### Claim
 
@@ -764,7 +768,7 @@ updateNFT();
 
 
 
-# Token Gating
+# ✋ Token Gating
 
 **IMPORTANT:** Before you start using the APIs for Token Gating, make sure that you have a Wallet ready with the token to test it out, if not follow the flow mentioned at the end of [Quickstart]()
 
