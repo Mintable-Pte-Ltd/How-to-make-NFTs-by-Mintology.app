@@ -14,7 +14,7 @@
 # Creating NFT on Ethereum with Mintology - 🤔 What is Mintology?
 Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
 
-Mintology 🔍 API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
+🔍 Mintology API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
 
 🙋🏻 Minting NFTs: Describes how to use the API to easily Mint NFTs on Ethereum without a gas fee. 
 
@@ -40,7 +40,7 @@ These guides are aimed at enabling users to create and manage no-cost NFTs on Et
 Mintology offers a dynamic platform for businesses to leverage NFTs creatively, not just as images but as versatile digital assets. This guide provides insights into:
 
 - **API Integration:** Easy to understand API calls for minting and managing NFTs.
-  **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee. 
+- **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee. 
 - **📈 Project Management:** In-depth guidance for launching and handling NFT projects.
 - **🔐 Mintable Wallets:** Create and control user wallets, ensuring private key custody.
 - **🖼️ Preminting NFTs:** Prepare NFT metadata efficiently for a seamless on-chain minting experience.
