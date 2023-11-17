@@ -159,7 +159,7 @@ Here's a overview of the Mintology API, covering various endpoints and processes
 
 This are the the things you will need to do before using the APIs seamlessly. There is only one endpoint ([Project Info](https://docs.mintology.app/reference/info-project)) that can be called without the need for an API Key, the rest require an API Key.
 
-## How do I get an API key? (Adding billing plans?)
+## Getting an API key first.
 
 On [Mintology web app](https://dashboard.mintology.app), click on your profile at the top left corner and select "Settings", your Mintology Key will be present in the Settings page. You can copy and also refresh your key if you need to directly from there.
 
