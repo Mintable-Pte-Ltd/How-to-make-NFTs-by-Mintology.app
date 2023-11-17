@@ -1,5 +1,5 @@
 <!-- SEO TAGS: NFT, Ethereum, Mintology, API, Digital Assets, Blockchain, Non-Fungible Tokens -->
-<html><h1>Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
+<html><h1>💡 Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
 <div align="center">
 <img src="https://dashboard.mintology.app/svgs/mintology-logo-alt.svg" alt="Mintology Logo"/>
 <a href="https://mintology.app"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=mintology.app&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
@@ -14,7 +14,7 @@
 # Creating NFT on Ethereum with Mintology - 🤔 What is Mintology?
 Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
 
-🔍 Mintology API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
+Mintology 🔍 API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
 
 🙋🏻 Minting NFTs: Describes how to use the API to easily Mint NFTs on Ethereum without a gas fee. 
 
@@ -40,7 +40,7 @@ These guides are aimed at enabling users to create and manage no-cost NFTs on Et
 Mintology offers a dynamic platform for businesses to leverage NFTs creatively, not just as images but as versatile digital assets. This guide provides insights into:
 
 - **API Integration:** Easy to understand API calls for minting and managing NFTs.
-- **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee. 
+  **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee. 
 - **📈 Project Management:** In-depth guidance for launching and handling NFT projects.
 - **🔐 Mintable Wallets:** Create and control user wallets, ensuring private key custody.
 - **🖼️ Preminting NFTs:** Prepare NFT metadata efficiently for a seamless on-chain minting experience.
@@ -73,7 +73,7 @@ For personalized guidance and support, chat with our specially trained ChatGPT, 
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
 
-### Authorization and Minting
+### ✋ Authorization and Minting
 
 1. **[Authorize](https://docs.mintology.app/reference/authorize)**:
    - **Purpose**: Validates the legitimacy of token ownership.
@@ -324,7 +324,7 @@ With a project created, you can now proceed to do any of the following, you can 
 
 - [🖼️ Premint NFTs]()
 - [Create 🔐 Mintable Wallets]()
-- [Mint and Claim NFTs]()
+- [🙋🏻 Mint and Claim NFTs]()
 - [NFT Metadata]()
 - [✋ Token Gating]() (you will need claimed or minted NFTs for this)
 - [Immutable X Integration]()
