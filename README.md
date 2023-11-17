@@ -1,5 +1,5 @@
 <!-- SEO TAGS: NFT, Ethereum, Mintology, API, Digital Assets, Blockchain, Non-Fungible Tokens -->
-<html><h1>💡 Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
+<html><h1>Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
 <div align="center">
 <img src="https://dashboard.mintology.app/svgs/mintology-logo-alt.svg" alt="Mintology Logo"/>
 <a href="https://mintology.app"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=mintology.app&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
