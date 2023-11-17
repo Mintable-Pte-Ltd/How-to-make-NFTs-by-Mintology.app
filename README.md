@@ -1,3 +1,14 @@
+<h1>Creating and Minting NFTs easily, via simple API calls. No gas fees, no crypto needed, on Ethereum.</h1>
+<div align="center">
+<img src="https://dashboard.mintology.app/svgs/mintology-logo-alt.svg" alt="Mintology Logo"/>
+<a href="https://mintology.app"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=mintology.app&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<!-- <img src="http://hits.dwyl.com/abhisheknaiidu/awesome-github-profile-readme.svg" alt="Hits Badge"/> -->
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+<a href="mailto:support@mintology.app"><img src="https://img.shields.io/badge/Email-Support%40mintology.app-blue" alt="Email Support" /></a>
+<a href="https://twitter.com/mintable_app" ><img src="https://img.shields.io/twitter/follow/mintable_app.svg?style=social" /> </a>
+<br>
+
+
 # Creating NFT on Ethereum with Mintology - What is Mintology?
 Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
 
