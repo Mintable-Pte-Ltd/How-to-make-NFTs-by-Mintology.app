@@ -8,7 +8,7 @@
 <a href="https://twitter.com/mintable_app" ><img src="https://img.shields.io/twitter/follow/mintable_app.svg?style=social" /> </a>
 <br>
 </div>
-</html>html>
+</html>
 
 # Creating NFT on Ethereum with Mintology - What is Mintology?
 Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
