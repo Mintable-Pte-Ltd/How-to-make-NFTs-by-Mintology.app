@@ -1,6 +1,14 @@
+---
+hidden: false
+# slug: token-gating
+category: 64e5f94ae377a50070c31bc9
+title: Token Gating
+description: Using these APIs, developers can restrict access to specific content, ensuring only those with a particular NFT can view it. This functionality can be leveraged for exclusive content, premium experiences, and more.
+---
+
 # Token Gating
 
-**IMPORTANT:** Before you start using the APIs for Token Gating, make sure that you have a Wallet ready with the token to test it out, if not follow the flow mentioned at the end of [Quickstart]()
+**IMPORTANT:** Before you start using the APIs for Token Gating, make sure that you have a Wallet ready with the token to test it out, if not follow the flow mentioned at the end of [Quickstart](https://docs.mintology.app/docs/3_quickstart)
 
 ## How Token Gating Works
 
@@ -22,10 +30,13 @@ Firstly, you'll need to make a request to the Authorize endpoint to check for NF
 - **Method**: `POST`
 - **Important**: Make this call from the back-end.
 
-#### Parameters:
+#### Path Parameters:
 
 - `projectId` (string, required): Your project ID found on your dashboard.
-- `email` (string, required): The email address of the user you want to check NFT ownership for.
+
+#### Body Parameters:
+
+- `walletAddress` (string, required): The walletAddress of the user you want to check NFT ownership for.
 - `token_id` (string, optional): This is the token id of the specific NFT token within the contract and it is optional; if absent, any token in the contract will authorize the wallet.
 
 #### Example Request (Node.js):
@@ -75,4 +86,4 @@ grantAccess();
 
 ### Alternatives
 
-You can also use the **[List Authorised Tokens](https://docs.mintology.app/reference/authorize)** endpoint to get the list of tokens that a user owns from a particular collection and modify what is accessible for the user through it.
+You can also use the **[List Authorised Tokens](https://docs.mintology.app/reference/authorize-inventory)** endpoint to get the list of tokens that a user owns from a particular collection and control what is accessible for the user through that information.
