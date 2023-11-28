@@ -480,18 +480,18 @@ Below are the steps to create a custodial wallet:
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function createWallet() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/custodial-wallets',
+    "https://api.mintology.app/v1/custodial-wallets",
     {
-      email: 'user@example.com',
-      username: 'user123', // Optional
+      email: "user@example.com",
+      username: "user123", // Optional
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -530,13 +530,13 @@ If you choose to let your users take control of their key from your website, her
 To amp up the security, we’ll hand you an encrypted private key. You’ll need to decrypt it before showing it to the user. Your decryption process will need your Mintology API Key (a secret you already know) and the `encrypt_iv` parameter (a fresh secret), which is returned to you by the _Approve Export_ endpoint. Here's a little code snippet to show you how to decrypt the key.
 
 ```ts
-const { createDecipheriv } = require('crypto');
+const { createDecipheriv } = require("crypto");
 
-const IV_INPUT = 'YOUR_IV';
+const IV_INPUT = "YOUR_IV";
 
-const PRIVATEKEY_INPUT = 'ENCRYPTED_PRIVATE_KEY';
+const PRIVATEKEY_INPUT = "ENCRYPTED_PRIVATE_KEY";
 
-const ENCRYPTION_SECRET_INPUT = 'YOUR_API_KEY';
+const ENCRYPTION_SECRET_INPUT = "YOUR_API_KEY";
 
 const iv = Buffer.from(IV_INPUT);
 
@@ -544,18 +544,19 @@ const encryptedText = Buffer.from(PRIVATEKEY_INPUT);
 
 const encryptionSecret = Buffer.from(ENCRYPTION_SECRET_INPUT);
 
-const decipher = createDecipheriv('aes-256-cbc', encryptionSecret, iv);
+const decipher = createDecipheriv("aes-256-cbc", encryptionSecret, iv);
 
 let decrypted = decipher.update(encryptedText);
 
 decrypted = Buffer.concat([decrypted, decipher.final()]);
 
-console.log('decrypted private key', decrypted.toString());
+console.log("decrypted private key", decrypted.toString());
 ```
 
 To tie up loose ends, you’ll need to provide a SHA256 hash (a variant of SHA-2) of the last 8 characters of the private key. This ensures that if you goof up the decryption, the key won't be deleted from the Mintable database by mistake.
 
 Letting a user claim custody of their wallet is a bit complex, do reach out to [Mintology support](https://dashboard.mintology.app/contact-us) anytime!
+
 ---
 
 # Minting and Claiming NFTs
