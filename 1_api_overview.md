@@ -36,13 +36,13 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Action**: Modifies a specific project with new details.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-update).
 5. **[Remove Projects](https://docs.mintology.app/reference/projects-remove)**:
-   - **Action**: Extinguishes a specified project from the platform.
+   - **Action**: Deletes a specified project from the platform.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-remove).
 6. **[Mint Config Update](https://docs.mintology.app/reference/projects-mint-update)**:
-   - **Action**: This operation allows enabling or disabling of the mint. However, this can only be toggled after the project has been successfully deployed.
+   - **Action**: This operation allows enabling or disabling minting (see `mint` endpoint). However, this can only be toggled after the project has been successfully deployed.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-mint-update).
 7. **[Claim Config Update](https://docs.mintology.app/reference/projects-claim-update)**:
-   - **Action**: This operation allows enabling or disabling of the claim. However, this can only be toggled after the project has been successfully deployed.
+   - **Action**: This operation allows enabling or disabling claiming (see `claim` endpoint). However, this can only be toggled after the project has been successfully deployed.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-claim-update).
 8. **[Deploy Projects](https://docs.mintology.app/reference/projects-deploy)**:
    - **Action**: Launches a specified project for token minting.
@@ -51,35 +51,35 @@ Here's a overview of the Mintology API, covering various endpoints and processes
 ### Mintable Wallets
 
 1. **[Create Mintable Wallet](https://docs.mintology.app/reference/custodial-wallets-create)**:
-   - **Action**: Establishes a new Mintable Wallet and Mintable account, enabling users to claim private key custody.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-create)​`​.
+   - **Action**: Creates a new Mintable Wallet and Mintable account, enabling users to claim private key custody.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-create).
 2. **[Request To Export](https://docs.mintology.app/reference/custodial-wallets-exports-request)**:
    - **Action**: Commences the process for user custody claim of their Mintable Wallet.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-request)​`​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-request).
 3. **[Approve Export](https://docs.mintology.app/reference/custodial-wallets-exports-approve)**:
    - **Action**: Transmits the Mintable wallet private key to the user, necessitating a request_id and OTP for authorization.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-approve)​`.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-approve).
 4. **[Remove Mintable Wallet](https://docs.mintology.app/reference/custodial-wallets-remove)**:
    - **Action**: Irrevocably deletes the private key from Mintology's systems post user custody claim of their Mintable Wallet.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-remove)​`.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-remove).
 
 ### Preminting NFTs
 
 1. **[List Premints](https://docs.mintology.app/reference/premints-list)**:
    - **Action**: Yields a list of premint items, arrayed by updated date with latest premints at the forefront.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-list)​​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-list).
 2. **[Create Premints](https://docs.mintology.app/reference/premints-create)**:
-   - **Action**: Fashions token details like name, image, animation_url, etc. for premint items.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-create)​.
+   - **Action**: Generates token details like `name`, `image`, `animation_url`, etc. for premint items.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-create).
 3. **[Retrieve Premints](https://docs.mintology.app/reference/premints-retrieve)**:
-   - **Action**: Fetches premint details like name, image, animation_url, etc. for specified premint items.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-retrieve)​.
+   - **Action**: Fetches premint details like 'name', 'image', `animation_url`, etc. for specified premint items.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-retrieve).
 4. **[Remove Premints](https://docs.mintology.app/reference/premints-remove)**:
    - **Action**: Extinguishes a specified premint entity.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-remove)​​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-remove).
 5. **[Import Premints](https://docs.mintology.app/reference/premints-import)**:
-   - **Action**: Import token details like name, image, animation_url and etc.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-import)​.
+   - **Action**: Import token details like `name`, `image`, `animation_url` and etc.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-import).
 
 ### IMX (Immutable X) Endpoints
 

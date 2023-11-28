@@ -8,7 +8,7 @@ description: Pre-minting is the process of preparing NFT metadata and assets bef
 
 # Preminting NFTs
 
-Pre-minting is the process of preparing NFT metadata and assets before the actual on-chain minting happens.
+Pre-minting is the process of preparing NFT metadata and assets, before the actual on-chain minting happens.
 
 **IMPORTANT**: Please note that your users will not be able to mint or claim more items than what you have preminted. You can add more items anytime, even after the project has been deployed.
 
@@ -32,7 +32,7 @@ The preminting process typically involves uploading NFT metadata like name, desc
 
 Please note that the metadata will either need to be self-hosted or you can create or add it via the platform and we will store the metadata on our end. The NFT metadata includes name, image url, animation url (optional), description (optional), other attributes (optional).
 
-Note: We also offer a 10 year guarantee for data hosted on our server
+**Note**: We also offer a 10 year guarantee for data hosted on our server.
 
 ### Preminting NFT
 

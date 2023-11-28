@@ -32,8 +32,8 @@ The following section outlines the other essential pre-requisites you'll require
 
 **Mintable Wallet** (If utilizing Mintable Wallets feature):
 
-- **Description**: A special type of wallet created on Mintology that allows users to claim custody of their private keys.
-- **How to Obtain**: Generated via the [Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API.
+- **Description**: A wallet managed and secured by Mintology; it is mapped to the user's email address, and the user can interact with it through [Mintable](https://mintable.com).
+- **How to Obtain**: Generated via the [Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API. A Mintable wallet will also be automatically created when a user tried to `mint` or `claim` an NFT, if they do not already have one.
 
 **Ethereum Layer 1 Account** (If utilizing IMX Endpoints):
 
@@ -47,7 +47,7 @@ The following section outlines the other essential pre-requisites you'll require
 
 **Metadata** (If pre-minting or updating metadata):
 
-- **Description**: Information describing the NFTs including attributes like name, image, animation_url, etc.
+- **Description**: Information describing the NFTs including attributes like `name`, `image`, `animation_url`, etc.
 - **How to Prepare**: As per the [Preminting NFTs](https://docs.mintology.app/reference/premints) and [Update NFT Metadata](https://docs.mintology.app/reference/metadata-update) endpoints documentation.
 
 **OTP** (One-Time Password) (If exporting Mintable Wallet):
