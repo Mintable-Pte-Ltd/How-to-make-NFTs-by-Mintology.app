@@ -68,24 +68,24 @@ Here's how you can create a premint NFT:
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function createPremint() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/premints',
+    "https://api.mintology.app/v1/{projectId}/premints",
     {
       quantity: 10,
       metadata: {
-        name: 'Exclusive Artwork',
-        image: 'https://example.com/image.png',
-        description: 'Limited edition digital artwork',
-        title: 'Exclusive Artwork',
-        subtitle: 'Limited edition digital artwork by renowned artist',
+        name: "Exclusive Artwork",
+        image: "https://example.com/image.png",
+        description: "Limited edition digital artwork",
+        title: "Exclusive Artwork",
+        subtitle: "Limited edition digital artwork by renowned artist",
       },
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -101,3 +101,5 @@ You can either create items one by one, using the **[Create](https://docs.mintol
 Once you have created (or imported) all the required premints, you can enable minting on your project. When your users mint or claim one of your NFTs, a random item among the premints will be selected.
 
 Let us know if you have any other questions!
+
+---
