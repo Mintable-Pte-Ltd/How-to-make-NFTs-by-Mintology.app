@@ -70,6 +70,8 @@ For personalized guidance and support, chat with our specially trained ChatGPT, 
 **[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience
 ---
 
+check auto generation works
+
 # Mintology API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
