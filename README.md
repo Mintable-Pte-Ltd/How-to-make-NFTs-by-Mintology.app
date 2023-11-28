@@ -12,11 +12,12 @@
 </html>
 
 # Creating NFT on Ethereum with Mintology - 🤔 What is Mintology?
+
 Mintology is a serivce that allows businesses to use NFT in creative ways beyond just images. This is a comprehensive guide for creating, managing, and building NFT projects using Mintology's web 2.0 API calls and gasless minting on Ethereum. Key aspects include:
 
 Mintology 🔍 API Overview: Covers authorization, minting, and claiming NFTs, with each process explained and documented​​.
 
-🙋🏻 Minting NFTs: Describes how to use the API to easily Mint NFTs on Ethereum without a gas fee. 
+🙋🏻 Minting NFTs: Describes how to use the API to easily Mint NFTs on Ethereum without a gas fee.
 
 📈 Project Management: Details on creating, managing, and deploying NFT projects​​.
 
@@ -26,7 +27,7 @@ Mintology 🔍 API Overview: Covers authorization, minting, and claiming NFTs, w
 
 ❎ IMX (Immutable X) Endpoints: Focuses on creating and managing NFTs on the Immutable X Layer 2 scaling solution for Ethereum​​.
 
-✔️  Pre-requisites: Outlines the necessary steps and requirements for using Mintology APIs effectively​​​​.
+✔️ Pre-requisites: Outlines the necessary steps and requirements for using Mintology APIs effectively​​​​.
 
 🚀 Quickstart Guide: Provides a beginner's guide to getting started with Mintology APIs, including basic pre-requisites and project creation​​​​.
 
@@ -36,11 +37,10 @@ These guides are aimed at enabling users to create and manage no-cost NFTs on Et
 
 ### Mintology: Revolutionize Your Business with NFTs
 
-
 Mintology offers a dynamic platform for businesses to leverage NFTs creatively, not just as images but as versatile digital assets. This guide provides insights into:
 
 - **API Integration:** Easy to understand API calls for minting and managing NFTs.
-  **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee. 
+  **🙋🏻 Minting NFTs**: Use the API to easily Mint NFTs on Ethereum without a gas fee.
 - **📈 Project Management:** In-depth guidance for launching and handling NFT projects.
 - **🔐 Mintable Wallets:** Create and control user wallets, ensuring private key custody.
 - **🖼️ Preminting NFTs:** Prepare NFT metadata efficiently for a seamless on-chain minting experience.
@@ -61,57 +61,61 @@ Welcome to the Mintology APIs! As you embark on your journey to integrate and in
 
 #### **Take the Next Step**
 
-Ready to dive into the world of NFTs? **[Sign up for Mintology](https://mintology.app)** today and transform your business with the power of blockchain technology. Embrace innovation and unlock new revenue streams with our comprehensive NFT solutions. 
+Ready to dive into the world of NFTs? **[Sign up for Mintology](https://mintology.app)** today and transform your business with the power of blockchain technology. Embrace innovation and unlock new revenue streams with our comprehensive NFT solutions.
 
 ### Chat with a Mintology Expert
 
 For personalized guidance and support, chat with our specially trained ChatGPT, a Mintology Developer Support Expert. This AI-powered assistant can provide detailed answers to your queries, helping you make the most of Mintology's features.
 
-**[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience
+**[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience.
 
-# Mintology 🔍 API Overview
+---
+
+# Mintology API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
 
-### ✋ Authorization and Minting
+### Authorization
 
 1. **[Authorize](https://docs.mintology.app/reference/authorize)**:
    - **Purpose**: Validates the legitimacy of token ownership.
    - **Parameters**: Utilizes Mintology API Key and Project ID for validation.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/authorize).
-2. **[Mint](https://docs.mintology.app/reference/mint)**:
-   - **Purpose**: Facilitates the minting process of NFTs directly into a user's wallet.
-   - **Compatibility**: Supports both custom 🔐 Mintable Wallets and standard cryptocurrency wallets.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/mint).
-3. **[Claim](https://docs.mintology.app/reference/claim)**:
-   - **Purpose**: Grants a complimentary NFT to the user's wallet.
-   - **Use Cases**: Suitable for purposes like discount vouchers or proof of attendance tokens.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/claim).
+2. **[List Authorized Tokens](https://docs.mintology.app/reference/authorize-inventory)**:
+   - **Purpose**: This endpoint is used to get the list of tokens that a user owns from a particular collection.
+   - **Parameters**: Utilizes Mintology API Key and Project ID for validation.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/authorize-inventory).
 
 ### Projects Management
 
-1. **[List](https://docs.mintology.app/reference/projects-list)**:
+1. **[List Projects](https://docs.mintology.app/reference/projects-list)**:
    - **Action**: Enumerates all created projects.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-list).
-2. **[Create](https://docs.mintology.app/reference/projects-create)**:
+2. **[Create Projects](https://docs.mintology.app/reference/projects-create)**:
    - **Action**: Generates a new project with designated details.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-create).
-3. **[Retrieve](https://docs.mintology.app/reference/projects-retrieve)**:
+3. **[Retrieve Projects](https://docs.mintology.app/reference/projects-show)**:
    - **Action**: Fetches project specifics identified by its Project ID.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-retrieve).
-4. **[Update](https://docs.mintology.app/reference/projects-update)**:
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-show).
+4. **[Update Projects](https://docs.mintology.app/reference/projects-update)**:
    - **Action**: Modifies a specific project with new details.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-update).
-5. **[Remove](https://docs.mintology.app/reference/projects-remove)**:
+5. **[Remove Projects](https://docs.mintology.app/reference/projects-remove)**:
    - **Action**: Extinguishes a specified project from the platform.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-remove).
-6. **[Deploy](https://docs.mintology.app/reference/projects-deploy)**:
+6. **[Mint Config Update](https://docs.mintology.app/reference/projects-mint-update)**:
+   - **Action**: This operation allows enabling or disabling of the mint. However, this can only be toggled after the project has been successfully deployed.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-mint-update).
+7. **[Claim Config Update](https://docs.mintology.app/reference/projects-claim-update)**:
+   - **Action**: This operation allows enabling or disabling of the claim. However, this can only be toggled after the project has been successfully deployed.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-claim-update).
+8. **[Deploy Projects](https://docs.mintology.app/reference/projects-deploy)**:
    - **Action**: Launches a specified project for token minting.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-deploy).
 
-### 🔐 Mintable Wallets
+### Mintable Wallets
 
-1. **[Create](https://docs.mintology.app/reference/custodial-wallets-create)**:
+1. **[Create Mintable Wallet](https://docs.mintology.app/reference/custodial-wallets-create)**:
    - **Action**: Establishes a new Mintable Wallet and Mintable account, enabling users to claim private key custody.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-create)​`​.
 2. **[Request To Export](https://docs.mintology.app/reference/custodial-wallets-exports-request)**:
@@ -120,25 +124,25 @@ Here's a overview of the Mintology API, covering various endpoints and processes
 3. **[Approve Export](https://docs.mintology.app/reference/custodial-wallets-exports-approve)**:
    - **Action**: Transmits the Mintable wallet private key to the user, necessitating a request_id and OTP for authorization.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-approve)​`.
-4. **[Remove](https://docs.mintology.app/reference/custodial-wallets-remove)**:
+4. **[Remove Mintable Wallet](https://docs.mintology.app/reference/custodial-wallets-remove)**:
    - **Action**: Irrevocably deletes the private key from Mintology's systems post user custody claim of their Mintable Wallet.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-remove)​`.
 
-### 🖼️ Preminting NFTs
+### Preminting NFTs
 
-1. **[List](https://docs.mintology.app/reference/premints-list)**:
+1. **[List Premints](https://docs.mintology.app/reference/premints-list)**:
    - **Action**: Yields a list of premint items, arrayed by updated date with latest premints at the forefront.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-list)​​.
-2. **[Create](https://docs.mintology.app/reference/premints-create)**:
+2. **[Create Premints](https://docs.mintology.app/reference/premints-create)**:
    - **Action**: Fashions token details like name, image, animation_url, etc. for premint items.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-create)​.
-3. **[Retrieve](https://docs.mintology.app/reference/premints-retrieve)**:
+3. **[Retrieve Premints](https://docs.mintology.app/reference/premints-retrieve)**:
    - **Action**: Fetches premint details like name, image, animation_url, etc. for specified premint items.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-retrieve)​.
-4. **[Remove](https://docs.mintology.app/reference/premints-remove)**:
+4. **[Remove Premints](https://docs.mintology.app/reference/premints-remove)**:
    - **Action**: Extinguishes a specified premint entity.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-remove)​​.
-5. **[Import](https://docs.mintology.app/reference/premints-import)**:
+5. **[Import Premints](https://docs.mintology.app/reference/premints-import)**:
    - **Action**: Import token details like name, image, animation_url and etc.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-import)​.
 
@@ -156,28 +160,40 @@ Here's a overview of the Mintology API, covering various endpoints and processes
 
 ### Info Endpoints
 
-1. **[Project Info](https://docs.mintology.app/reference/info-project)**:
+1. **[Project Info](https://docs.mintology.app/reference/meta-info)**:
    - **Usage**: Procures project information such as details and configuration.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/info-project)​​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/meta-info)​​.
 
 ### Metadata Endpoints
 
-1. **[Metadata Update](https://docs.mintology.app/reference/info-metadata)**:
+1. **[Update NFT Metadata](https://docs.mintology.app/reference/metadata-update)**:
    - **Usage**: Alters NFT metadata encompassing details like token name, image, animation_url, etc., recommended to be invoked from the back-end.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/info-metadata).
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/metadata-update).
 
+### Mint Endpoints
 
+1. **[Mint](https://docs.mintology.app/reference/mint)**:
+   - **Purpose**: Facilitates the minting process of NFTs directly into a user's wallet.
+   - **Compatibility**: Supports both custom Mintable Wallets and standard cryptocurrency wallets.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/mint).
 
----------------------------------------------
+### Claim Endpoints
 
+1. **[Claim](https://docs.mintology.app/reference/claim)**:
+   - **Purpose**: Grants a complimentary NFT to the user's wallet.
+   - **Use Cases**: Suitable for purposes like discount vouchers or proof of attendance tokens.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/claim).
+---
 
 # Pre-requisites
 
-This are the the things you will need to do before using the APIs seamlessly. There is only one endpoint ([Project Info](https://docs.mintology.app/reference/info-project)) that can be called without the need for an API Key, the rest require an API Key.
+This are the the things you will need to do before using the APIs seamlessly. There is only one endpoint ([Project Info](https://docs.mintology.app/reference/meta-info)) that can be called without the need for an API Key, the rest require an API Key.
 
-## Getting an API key first.
+## How do I get an API key?
 
 On [Mintology web app](https://dashboard.mintology.app), click on your profile at the top left corner and select "Settings", your Mintology Key will be present in the Settings page. You can copy and also refresh your key if you need to directly from there.
+
+**IMPORTANT**: Make sure you have choosen the appropriate billing plan for your projects.
 
 ## Other Pre-requisites
 
@@ -193,17 +209,17 @@ The following section outlines the other essential pre-requisites you'll require
 - **Description**: The public address of an Ethereum wallet.
 - **How to Obtain**: Available within the cryptocurrency wallet application.
 
-**Mintable Wallet** (If utilizing 🔐 Mintable Wallets feature):
+**Mintable Wallet** (If utilizing Mintable Wallets feature):
 
 - **Description**: A special type of wallet created on Mintology that allows users to claim custody of their private keys.
-- **How to Obtain**: Generated via the [🔐 Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API.
+- **How to Obtain**: Generated via the [Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API.
 
-**Ethereum Layer 1 Account** (If utilizing 🌐 IMX Endpoints):
+**Ethereum Layer 1 Account** (If utilizing IMX Endpoints):
 
 - **Description**: An account on the main Ethereum blockchain.
 - **How to Obtain**: Available within the cryptocurrency wallet application.
 
-**Immutable X Layer 2 Account** (If utilizing 🌐 IMX Endpoints):
+**Immutable X Layer 2 Account** (If utilizing IMX Endpoints):
 
 - **Description**: An account on the Immutable X Layer 2 scaling solution for Ethereum.
 - **How to Obtain**: Created via the [Register IMX User endpoint](https://docs.mintology.app/reference/imx-register) of the Mintology API.
@@ -211,7 +227,7 @@ The following section outlines the other essential pre-requisites you'll require
 **Metadata** (If pre-minting or updating metadata):
 
 - **Description**: Information describing the NFTs including attributes like name, image, animation_url, etc.
-- **How to Prepare**: As per the [🖼️ Preminting NFTs](https://docs.mintology.app/reference/premints) and [Metadata Update](https://docs.mintology.app/reference/info-metadata) endpoints documentation.
+- **How to Prepare**: As per the [Preminting NFTs](https://docs.mintology.app/reference/premints) and [Update NFT Metadata](https://docs.mintology.app/reference/metadata-update) endpoints documentation.
 
 **OTP** (One-Time Password) (If exporting Mintable Wallet):
 
@@ -222,13 +238,15 @@ The following section outlines the other essential pre-requisites you'll require
 
 - **Description**: A unique identifier for the export request, used to approve the export of a Mintable Wallet.
 - **How to Obtain**: Generated during the [Request To Export process](https://docs.mintology.app/reference/custodial-wallets-exports-request).
+---
 
+# Quickstart Guide
 
+## Getting Started with Mintology APIs
 
+Welcome to the Mintology APIs! As you embark on your journey to integrate and interact with our robust suite of APIs, there are some key items and information you'll need to have on hand. We've designed our APIs with ease of use in mind, ensuring a smooth onboarding process for developers.
 
----------------------------------------------
-
-
+## Getting started
 
 ### Basic Pre-requisites
 
@@ -240,7 +258,7 @@ Before making any API calls, ensure you're authorized. Include the following hea
 }
 ```
 
-To find out how to get your API Key and other pre-requisites, look through **[Pre-requisites](https://docs.mintology.app/reference/authorize)**:
+To find out how to get your API Key and other pre-requisites, look through **[Pre-requisites](https://docs.mintology.app/docs/2_pre-requisites)**:
 
 ## Creating Projects
 
@@ -248,21 +266,16 @@ Creating a project is the initial step to operate on the Mintology platform. A p
 
 There are 3 types of projects:
 
-#### Shared
-
-Mint to the Mintology shared contract. Your NFTs will be visible in the shared Mintology store.
-
-#### Dedicated
-
-Create dedicated contract for your NFTs. You will have your own store on our marketplace.
-
-#### Existing
-
-Mint your NFTs to your existing smart contracts created on Mintology.
+- #### Shared
+  Mint to the Mintology shared contract. Your NFTs will be visible in the shared Mintology store.
+- #### Dedicated
+  Create dedicated contract for your NFTs. You will have your own store on our marketplace.
+- #### Existing
+  Mint your NFTs to your existing smart contracts created on Mintology.
 
 ### Creating a project using API:
 
-Create a project using the [Project Create](https://docs.mintology.app/reference/projects-create) endpoint, this method of creating a project gives more options that can be customised.
+Create a project using the [Create Projects](https://docs.mintology.app/reference/projects-create) endpoint, this method of creating a project gives more options that can be customised.
 
 #### Endpoint:
 
@@ -322,22 +335,15 @@ You can also create a project though the [Mintology web app](https://dashboard.m
 
 With a project created, you can now proceed to do any of the following, you can follow the recommended flow in the given order:
 
-- [🖼️ Premint NFTs]()
-- [Create 🔐 Mintable Wallets]()
-- [🙋🏻 Mint and Claim NFTs]()
-- [NFT Metadata]()
-- [✋ Token Gating]() (you will need claimed or minted NFTs for this)
-- [Immutable X Integration]()
+- [Premint NFTs](https://docs.mintology.app/docs/4_premint)
+- [Create Mintable Wallets](https://docs.mintology.app/docs/5_custodial-wallets)
+- [Mint and Claim NFTs](https://docs.mintology.app/docs/6_mint_and_claim)
+- [NFT Metadata](https://docs.mintology.app/docs/7_nft_metadata)
+- [Token Gating](https://docs.mintology.app/docs/8_token_gating) (you will need claimed or minted NFTs for this)
+- [Immutable X Integration](https://docs.mintology.app/docs/9_imx_integration)
+---
 
-
-
----------------------------------------------
-
-
-
-
-
-# 🖼️ Preminting NFTs
+# Preminting NFTs
 
 Pre-minting is the process of preparing NFT metadata and assets before the actual on-chain minting happens.
 
@@ -361,12 +367,13 @@ The preminting process typically involves uploading NFT metadata like name, desc
 
 ### NFT Metadata
 
-Please note that the metadata will either need to be self-hosted or you can create or add it via the platform and we will store the metadata on our end.
+Please note that the metadata will either need to be self-hosted or you can create or add it via the platform and we will store the metadata on our end. The NFT metadata includes name, image url, animation url (optional), description (optional), other attributes (optional).
+
 Note: We also offer a 10 year guarantee for data hosted on our server
 
 ### Preminting NFT
 
-You can find the API documentation under **[🖼️ Premints](https://docs.mintology.app/reference/premints)**.
+You can find the API documentation under **[Premints](https://docs.mintology.app/reference/premints)**.
 
 Here's how you can create a premint NFT:
 
@@ -392,33 +399,30 @@ Here's how you can create a premint NFT:
 - `animation_url` (optional, string): URL to a multimedia attachment for the item. Supported file extensions include GLTF, GLB, WEBM, MP4, M4V, OGV, OGG, MP3, WAV, and OGA. HTML pages are also supported for rich experiences and interactive NFTs.
 - `description` (optional, string): A human-readable description of the item. Markdown is supported.
 - `attributes` (optional, array of objects): Attributes for the item, displayed on the item page on Mintology and other marketplaces.
-
-##### Additional Object:
-
 - `title` (optional, string): Title of the NFT, used for listing the item for sales.
 - `subtitle` (optional, string): Short description or subtitle of the NFT, used for listing the item for sales.
 
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function createPremint() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/premints',
+    "https://api.mintology.app/v1/{projectId}/premints",
     {
       quantity: 10,
       metadata: {
-        name: 'Exclusive Artwork',
-        image: 'https://example.com/image.png',
-        description: 'Limited edition digital artwork',
+        name: "Exclusive Artwork",
+        image: "https://example.com/image.png",
+        description: "Limited edition digital artwork",
+        title: "Exclusive Artwork",
+        subtitle: "Limited edition digital artwork by renowned artist",
       },
-      title: 'Exclusive Artwork',
-      subtitle: 'Limited edition digital artwork by renowned artist',
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -435,21 +439,17 @@ Once you have created (or imported) all the required premints, you can enable mi
 
 Let us know if you have any other questions!
 
+---
 
-
----------------------------------------------
-
-
-
-# 🔐 Mintable Wallets
+# Mintable Wallets
 
 Once you have preminted NFTs, you would need to create wallets for your users to store the NFTs. Mintology provides a way to create custodial wallets, where users can later claim custody of their private keys. This process also creates a Mintable account for the users.
 
-## What are 🔐 Mintable Wallets and how do they work
+## What are Mintable Wallets
 
 ### The Issue
 
-A crypto wallet is basically at its core is a set of keys (private keys, to be precise) that need to be kept ultra-secret and are used to sign messages. Sure, there are lots of noncustodial wallets (like Metamask, Coinbase, and more) out there, but they demand your users to be crypto-savvy and take the whole responsibility of keeping their private key or seed under wraps.
+A crypto wallet is basically at its core is a set of keys (private keys, to be precise) that need to be kept ultra-secret and are used to sign messages. There are lots of noncustodial wallets (like Metamask, Coinbase, and more) out there, but they demand your users to be crypto-savvy and take the whole responsibility of keeping their private key or seed under wraps.
 
 ### Mintology's solution
 
@@ -461,15 +461,15 @@ Some users might get curious and want to dive deeper, deciding to take charge of
 
 ## How to use the APIs
 
-**IMPORTANT**: Before you start using the APIs, make sure that you have enabled 🔐 Mintable Wallets on your Settings page on [Mintology web app](https://dashboard.mintology.app)
+**IMPORTANT**: Before you start using the APIs, make sure that you have enabled Mintable Wallets on your Settings page on [Mintology web app](https://dashboard.mintology.app)
 
 Below are the steps to create a custodial wallet:
 
 #### Endpoint:
 
-`POST https://api.mintology.app/v1/custodial-wallets`
-
-> **Note**: It's imperative to make this call from your back-end to prevent potential spamming or exposure of your private API key.
+- **URL**:`https://api.mintology.app/v1/custodial-wallets`
+- **Method**: `POST`
+- **Important**: Make this call from the back-end.
 
 #### Body Parameters:
 
@@ -480,18 +480,18 @@ Below are the steps to create a custodial wallet:
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function createWallet() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/custodial-wallets',
+    "https://api.mintology.app/v1/custodial-wallets",
     {
-      email: 'user@example.com',
-      username: 'user123', // Optional
+      email: "user@example.com",
+      username: "user123", // Optional
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -517,26 +517,26 @@ With the wallet created, you can now proceed to either mint or claim NFTs into t
 
 If you choose to let your users take control of their key from your website, here’s the path to follow:
 
-1. Kickstart the private key claim process (**[Request To Export](https://docs.mintology.app/reference/custodial-wallets-exports-request)** endpoint): Doing this shoots an email from Mintable to the user, armed with an OTP. This OTP is our safety check to ensure your user genuinely wants to take control of their key.
+1. Kickstart the private key claim process with the **[Request To Export](https://docs.mintology.app/reference/custodial-wallets-exports-request)** endpoint: Doing this sends an email from Mintable to the user with an OTP. This OTP is our safety check to ensure your user genuinely wants to take control of their key.
 
 2. Get the user to share the OTP received from Mintable, and pass it to the **[Approve Export](https://docs.mintology.app/reference/custodial-wallets-exports-approve)** endpoint.
 
 3. Hand over the key to your user, making sure they grasp the big deal of taking control and have jotted down their key somewhere safe. **Remember, it's crucial to spell this out to them clearly, and this is your responsibility!**
 
-4. Ask Mintology to erase the private key from Mintable's database (**[Remove](https://docs.mintology.app/reference/custodial-wallets-remove)** endpoint).
+4. Ask Mintology to erase the private key from Mintable's database through **[Remove Mintable Wallets](https://docs.mintology.app/reference/custodial-wallets-remove)** endpoint.
 
 ## A Peek into Encryption Technicalities 🔐
 
 To amp up the security, we’ll hand you an encrypted private key. You’ll need to decrypt it before showing it to the user. Your decryption process will need your Mintology API Key (a secret you already know) and the `encrypt_iv` parameter (a fresh secret), which is returned to you by the _Approve Export_ endpoint. Here's a little code snippet to show you how to decrypt the key.
 
 ```ts
-const { createDecipheriv } = require('crypto');
+const { createDecipheriv } = require("crypto");
 
-const IV_INPUT = 'YOUR_IV';
+const IV_INPUT = "YOUR_IV";
 
-const PRIVATEKEY_INPUT = 'ENCRYPTED_PRIVATE_KEY';
+const PRIVATEKEY_INPUT = "ENCRYPTED_PRIVATE_KEY";
 
-const ENCRYPTION_SECRET_INPUT = 'YOUR_API_KEY';
+const ENCRYPTION_SECRET_INPUT = "YOUR_API_KEY";
 
 const iv = Buffer.from(IV_INPUT);
 
@@ -544,33 +544,24 @@ const encryptedText = Buffer.from(PRIVATEKEY_INPUT);
 
 const encryptionSecret = Buffer.from(ENCRYPTION_SECRET_INPUT);
 
-const decipher = createDecipheriv('aes-256-cbc', encryptionSecret, iv);
+const decipher = createDecipheriv("aes-256-cbc", encryptionSecret, iv);
 
 let decrypted = decipher.update(encryptedText);
 
 decrypted = Buffer.concat([decrypted, decipher.final()]);
 
-console.log('decrypted private key', decrypted.toString());
+console.log("decrypted private key", decrypted.toString());
 ```
 
 To tie up loose ends, you’ll need to provide a SHA256 hash (a variant of SHA-2) of the last 8 characters of the private key. This ensures that if you goof up the decryption, the key won't be deleted from the Mintable database by mistake.
 
 Letting a user claim custody of their wallet is a bit complex, do reach out to [Mintology support](https://dashboard.mintology.app/contact-us) anytime!
 
+---
 
+# Minting and Claiming NFTs
 
-
-
----------------------------------------------
-
-
-
-
-
-
-# 🙋🏻 Minting and Claiming NFTs
-
-**IMPORTANT**: Before you start using the APIs, make sure that you have deployed your project and enabled Claiming and Minting on your Project Dashboard page on [Mintology web app](https://dashboard.mintology.app).
+**IMPORTANT**: Before you start using the APIs, make sure that you have deployed your project and enabled Claiming and Minting through the **[Claim Config Update](https://docs.mintology.app/reference/projects-claim-update)** and **[Mint Config Update](https://docs.mintology.app/reference/projects-mint-update)** endpoints or through your Project Dashboard page on [Mintology web app](https://dashboard.mintology.app).
 
 Once the wallets are set up for your users, you can proceed to mint or claim NFTs into these wallets.
 
@@ -578,24 +569,45 @@ Once the wallets are set up for your users, you can proceed to mint or claim NFT
 
 ### Mint
 
-Use the `/mint` endpoint to mint the NFT, including metadata as an object in the request body.
-This API endpoint is designed for minting NFTs straight into a user's wallet. Ideal for selling NFTs, targeted airdrops, or minting collectibles. Supports both custom 🔐 Mintable Wallets and standard crypto wallets.
+Use the **[Mint](https://docs.mintology.app/reference/mint)** endpoint to mint the NFT, including metadata as an object in the request body.
+This API endpoint is designed for minting NFTs straight into a user's wallet. Ideal for selling NFTs, targeted airdrops, or minting collectibles. Supports both custom Mintable Wallets and standard crypto wallets.
 
 ### Claim
 
--> To add description
+Use the **[Claim](https://docs.mintology.app/reference/claim)** endpoint to mint a free NFT to your user's wallet (which can be a Mintable Wallet, or their existing crypto wallet). This is the endpoint you should use for discount coupons, proof of attendance, and in general NFTs which you do not intend to sell.
 
 Note: Keeping 'mint' and 'claim' endpoints separate simplifies analytics, making it easier to track each call's specific purpose.
 
 ## How to use the API
 
-Note: If you don't pass in a metadata object - it will create a random NFT using your pre-mint data you've set up on the self serve dashboard. But if you pass in a metadata object, it will mint a new NFT with the new metadata object you passed in.
+Note: If you don't pass in a metadata object - it will create a random NFT using your pre-mint data you've set up through the API endpoints or dashboard. But if you pass in a metadata object, it will mint a new NFT with the new metadata object you passed in.
 
 ### Minting NFTs
 
 Minting is ideal for selling NFTs, targeted airdrops, or minting collectibles. You can mint NFTs directly into a user's wallet using the following endpoint:
 
-`POST https://api.mintology.app/v1/{projectId}/mint`
+#### Endpoint:
+
+- **URL**: `https://api.mintology.app/v1/{projectId}/mint`
+- **Method**: `POST`
+
+#### Path Parameters:
+
+- `projectId` (string, required): Your project ID found on your dashboard.
+
+#### Body Parameters:
+
+- `metadata` (object, optional): If absent, the metadata defined in the project will be used. Otherwise, it will mint a new NFT with the new metadata object you passed in.
+  - `name` (string, required): Name of the item.
+  - `image` (string, required): URL to the image of the item (350 x 350 recommended).
+  - `animation_url` (string, optional): URL to a multimedia attachment for the item.
+  - `description` (string, optional): A human-readable description of the item (Markdown supported).
+  - `attributes` (array of objects, optional): Attributes for the item.
+  - `title` (optional, string): Title of the NFT, used for listing the item for sales.
+  - `subtitle` (optional, string): Short description or subtitle of the NFT, used for listing the item for sales.
+- `wallet_address` (string, required): Wallet address to mint the token to.
+
+#### Example Request:
 
 ```curl
 curl -X POST https://api.example.com/mint   -H "api-key: YOUR_API_KEY"   -d '{
@@ -616,35 +628,24 @@ curl -X POST https://api.example.com/mint   -H "api-key: YOUR_API_KEY"   -d '{
   }'
 ```
 
-### Parameters:
-
-- **projectId (string, required):** Your project ID found on your dashboard.
-- **metadata (object, optional):** If absent, the metadata defined in the project will be used. Otherwise, it will mint a new NFT with the new metadata object you passed in.
-  - **name (string, required):** Name of the item.
-  - **image (string, required):** URL to the image of the item (350 x 350 recommended).
-  - **animation_url (string, optional):** URL to a multimedia attachment for the item.
-  - **description (string, optional):** A human-readable description of the item (Markdown supported).
-  - **attributes (array of objects, optional):** Attributes for the item.
-- **wallet_address (string, required):** Wallet address to mint the token to.
-
-### Example Request (Node.js):
+#### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function mintNFT() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/mint',
+    "https://api.mintology.app/v1/{projectId}/mint",
     {
       metadata: {
-        name: 'Unique NFT',
-        image: 'https://example.com/image.png',
+        name: "Unique NFT",
+        image: "https://example.com/image.png",
       },
-      wallet_address: '0x12345...',
+      wallet_address: "0x12345...",
     },
     {
       headers: {
-        Authorization: 'Bearer YOUR_API_KEY',
+        "Api-key": "YOUR_API_KEY",
       },
     }
   );
@@ -662,31 +663,32 @@ Claiming is ideal for discount coupons, proof of attendance, or NFTs which you d
 
 ```plaintext
 POST https://api.mintology.app/v1/{projectId}/claim
-
-
 ```
 
 This endpoint will mint a free NFT to your user's wallet, which can be a Mintable Wallet or their existing crypto wallet. The mint and claim endpoints are kept separate to simplify analytics and track each call's specific purpose.
 
-#### Parameters:
+#### Path Parameters:
 
-- **projectId (string, required):** Your project ID found on your dashboard.
-- **wallet_address (string, required):** Wallet address to mint the token to.
+- `projectId` (string, required): Your project ID found on your dashboard.
+
+#### Body Parameters:
+
+- `wallet_address` (string, required): Wallet address to mint the token to.
 
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function claimNFT() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/claim',
+    "https://api.mintology.app/v1/{projectId}/claim",
     {
-      wallet_address: '0x12345...',
+      wallet_address: "0x12345...",
     },
     {
       headers: {
-        'Api-key': 'YOUR_API_KEY',
+        "Api-key": "YOUR_API_KEY",
       },
     }
   );
@@ -698,15 +700,7 @@ claimNFT();
 
 After claiming, check the event logs to confirm the NFT's status on the Mintology dashboard.
 
-
-
-
-
-
----------------------------------------------
-
-
-
+---
 
 # NFT Metadata
 
@@ -718,21 +712,26 @@ Use the NFT metadata endpoints to update your NFT metadata and also retrieve it 
 
 ## How to use the API
 
-**[Metadata Update](https://docs.mintology.app/reference/info-metadata)** endpoint alters NFT metadata encompassing details like token name, image, animation_url, etc. You will need the Project ID and Token ID of the NFT metadata you want to update.
+**[Update NFT Metadata](https://docs.mintology.app/reference/metadata-update)** endpoint alters NFT metadata encompassing details like token name, image, animation_url, etc. You will need the Project ID and Token ID of the NFT metadata you want to update.
 
 - **URL**:`https://api.mintology.dev/{projectId}/metadata/{tokenId}`
 - **Method**: `PUT`
 - **Important**: Make this call from the back-end.
 
-#### Parameters:
+#### Path Parameters:
 
-- **projectId (string, required):** Your project ID found on your dashboard.
-- **metadata (object, required):** Add in the updates parameters for metadata here
-  - **name (string, required):** Name of the item.
-  - **image (string, required):** URL to the image of the item (350 x 350 recommended).
-  - **animation_url (string, optional):** URL to a multimedia attachment for the item.
-  - **description (string, optional):** A human-readable description of the item (Markdown supported).
-  - **attributes (array of objects, optional):** Attributes for the item.
+- `projectId` (string, required): Your project ID found on your dashboard.
+
+#### Body Parameters:
+
+- `metadata` (object, optional): If absent, the metadata defined in the project will be used. Otherwise, it will mint a new NFT with the new metadata object you passed in.
+  - `name` (string, required): Name of the item.
+  - `image` (string, required): URL to the image of the item (350 x 350 recommended).
+  - `animation_url` (string, optional): URL to a multimedia attachment for the item.
+  - `description` (string, optional): A human-readable description of the item (Markdown supported).
+  - `attributes` (array of objects, optional): Attributes for the item.
+  - `title` (optional, string): Title of the NFT, used for listing the item for sales.
+  - `subtitle` (optional, string): Short description or subtitle of the NFT, used for listing the item for sales.
 
 #### Example Request (Node.js):
 
@@ -759,18 +758,11 @@ async function updateNFT() {
 
 updateNFT();
 ```
+---
 
+# Token Gating
 
-
-
-
----------------------------------------------
-
-
-
-# ✋ Token Gating
-
-**IMPORTANT:** Before you start using the APIs for Token Gating, make sure that you have a Wallet ready with the token to test it out, if not follow the flow mentioned at the end of [Quickstart]()
+**IMPORTANT:** Before you start using the APIs for Token Gating, make sure that you have a Wallet ready with the token to test it out, if not follow the flow mentioned at the end of [Quickstart](https://docs.mintology.app/docs/3_quickstart)
 
 ## How Token Gating Works
 
@@ -792,26 +784,29 @@ Firstly, you'll need to make a request to the Authorize endpoint to check for NF
 - **Method**: `POST`
 - **Important**: Make this call from the back-end.
 
-#### Parameters:
+#### Path Parameters:
 
 - `projectId` (string, required): Your project ID found on your dashboard.
-- `email` (string, required): The email address of the user you want to check NFT ownership for.
+
+#### Body Parameters:
+
+- `walletAddress` (string, required): The walletAddress of the user you want to check NFT ownership for.
 - `token_id` (string, optional): This is the token id of the specific NFT token within the contract and it is optional; if absent, any token in the contract will authorize the wallet.
 
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function checkNFTOwnership() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/authorize',
+    "https://api.mintology.app/v1/{projectId}/authorize",
     {
-      walletAddress: 'walletAddress',
+      walletAddress: "walletAddress",
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -831,11 +826,11 @@ async function grantAccess() {
 
   if (ownershipData.authorized) {
     // User has the NFT, grant access
-    console.log('Access granted');
+    console.log("Access granted");
     // Redirect to special page, grant discount, etc.
   } else {
     // User does not have the NFT, deny access
-    console.log('Access denied');
+    console.log("Access denied");
     // Redirect to a different page, show an error message, etc.
   }
 }
@@ -845,22 +840,13 @@ grantAccess();
 
 ### Alternatives
 
-You can also use the **[List Authorised Tokens](https://docs.mintology.app/reference/authorize)** endpoint to get the list of tokens that a user owns from a particular collection and modify what is accessible for the user through it.
+You can also use the **[List Authorised Tokens](https://docs.mintology.app/reference/authorize-inventory)** endpoint to get the list of tokens that a user owns from a particular collection and control what is accessible for the user through that information.
 
-
-
-
-
-
-
----------------------------------------------
-
-
-
+---
 
 # Immutable X Integration
 
-## What it IMX?
+## What is IMX?
 
 Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at reducing the environmental impact of NFT transactions while ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Integration with Immutable X can significantly enhance the user experience by making transactions faster and more cost-effective.
 
@@ -873,6 +859,23 @@ The integration involves registering an IMX user, minting, and transferring IMX 
 ### Step 1: Register IMX User
 
 Registering a user on Immutable X is the initial step for IMX integration. This is done through the `Register IMX User` endpoint.
+
+#### Endpoint:
+
+- **URL**: `https://api.mintology.app/v1/{projectId}/imx/register`
+- **Method**: `POST`
+- **Important**: Make this call from the back-end.
+
+#### Path Parameters:
+
+- `projectId` (string, required): Your project ID found on your dashboard.
+
+#### Body Parameters:
+
+- `email` (string, required): The email of the user you want to register for.
+- `username` (string, optional): The username that will be tied to this private key/wallet.
+
+#### Example:
 
 ```javascript
 const axios = require('axios');
@@ -901,6 +904,8 @@ registerIMXUser();
 
 Once the user is registered on IMX, the next step is to mint an IMX item using the `Mint IMX Item` endpoint.
 
+#### Example:
+
 ```javascript
 async function mintIMXItem() {
   const response = await axios.post(
@@ -927,6 +932,8 @@ mintIMXItem();
 ### Step 3: Transfer IMX Item
 
 The final step in IMX integration is transferring the minted IMX item to another user using the Transfer IMX Item endpoint.
+
+#### Example:
 
 ```javascript
 async function transferIMXItem() {

@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update README
+
+permissions:
+  contents: write
+  pull-requests: write  
+
+# Controls when the workflow will run
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: |
+          python ./.github/workflows/updateReadme.py
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "auto generate README.md"
+          git push
+

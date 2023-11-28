@@ -1,10 +1,20 @@
+---
+hidden: false
+# slug: pre-requisites
+category: 64e5f94ae377a50070c31bc9
+title: Pre-requisites
+description: This are the the things you will need to do before using the APIs seamlessly. There is only one endpoint ([Project Info](https://docs.mintology.app/reference/info-project)) that can be called without the need for an API Key, the rest require an API Key.
+---
+
 # Pre-requisites
 
-This are the the things you will need to do before using the APIs seamlessly. There is only one endpoint ([Project Info](https://docs.mintology.app/reference/info-project)) that can be called without the need for an API Key, the rest require an API Key.
+This are the the things you will need to do before using the APIs seamlessly. There is only one endpoint ([Project Info](https://docs.mintology.app/reference/meta-info)) that can be called without the need for an API Key, the rest require an API Key.
 
-## How do I get an API key? (Adding billing plans?)
+## How do I get an API key?
 
 On [Mintology web app](https://dashboard.mintology.app), click on your profile at the top left corner and select "Settings", your Mintology Key will be present in the Settings page. You can copy and also refresh your key if you need to directly from there.
+
+**IMPORTANT**: Make sure you have choosen the appropriate billing plan for your projects.
 
 ## Other Pre-requisites
 
@@ -38,7 +48,7 @@ The following section outlines the other essential pre-requisites you'll require
 **Metadata** (If pre-minting or updating metadata):
 
 - **Description**: Information describing the NFTs including attributes like name, image, animation_url, etc.
-- **How to Prepare**: As per the [Preminting NFTs](https://docs.mintology.app/reference/premints) and [Metadata Update](https://docs.mintology.app/reference/info-metadata) endpoints documentation.
+- **How to Prepare**: As per the [Preminting NFTs](https://docs.mintology.app/reference/premints) and [Update NFT Metadata](https://docs.mintology.app/reference/metadata-update) endpoints documentation.
 
 **OTP** (One-Time Password) (If exporting Mintable Wallet):
 

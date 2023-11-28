@@ -1,3 +1,11 @@
+---
+hidden: false
+# slug: premints
+category: 64e5f94ae377a50070c31bc9
+title: Preminting NFTs
+description: Pre-minting is the process of preparing NFT metadata and assets before the actual on-chain minting happens.
+---
+
 # Preminting NFTs
 
 Pre-minting is the process of preparing NFT metadata and assets before the actual on-chain minting happens.
@@ -22,7 +30,8 @@ The preminting process typically involves uploading NFT metadata like name, desc
 
 ### NFT Metadata
 
-Please note that the metadata will either need to be self-hosted or you can create or add it via the platform and we will store the metadata on our end.
+Please note that the metadata will either need to be self-hosted or you can create or add it via the platform and we will store the metadata on our end. The NFT metadata includes name, image url, animation url (optional), description (optional), other attributes (optional).
+
 Note: We also offer a 10 year guarantee for data hosted on our server
 
 ### Preminting NFT
@@ -53,33 +62,30 @@ Here's how you can create a premint NFT:
 - `animation_url` (optional, string): URL to a multimedia attachment for the item. Supported file extensions include GLTF, GLB, WEBM, MP4, M4V, OGV, OGG, MP3, WAV, and OGA. HTML pages are also supported for rich experiences and interactive NFTs.
 - `description` (optional, string): A human-readable description of the item. Markdown is supported.
 - `attributes` (optional, array of objects): Attributes for the item, displayed on the item page on Mintology and other marketplaces.
-
-##### Additional Object:
-
 - `title` (optional, string): Title of the NFT, used for listing the item for sales.
 - `subtitle` (optional, string): Short description or subtitle of the NFT, used for listing the item for sales.
 
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function createPremint() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/premints',
+    "https://api.mintology.app/v1/{projectId}/premints",
     {
       quantity: 10,
       metadata: {
-        name: 'Exclusive Artwork',
-        image: 'https://example.com/image.png',
-        description: 'Limited edition digital artwork',
+        name: "Exclusive Artwork",
+        image: "https://example.com/image.png",
+        description: "Limited edition digital artwork",
+        title: "Exclusive Artwork",
+        subtitle: "Limited edition digital artwork by renowned artist",
       },
-      title: 'Exclusive Artwork',
-      subtitle: 'Limited edition digital artwork by renowned artist',
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -95,3 +101,5 @@ You can either create items one by one, using the **[Create](https://docs.mintol
 Once you have created (or imported) all the required premints, you can enable minting on your project. When your users mint or claim one of your NFTs, a random item among the premints will be selected.
 
 Let us know if you have any other questions!
+
+---

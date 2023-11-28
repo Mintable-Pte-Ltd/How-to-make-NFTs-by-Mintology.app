@@ -1,6 +1,14 @@
+---
+hidden: false
+# slug: imx
+category: 64e5f94ae377a50070c31bc9
+title: Immutable X Integration
+description: Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at reducing the environmental impact of NFT transactions while ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Integration with Immutable X can significantly enhance the user experience by making transactions faster and more cost-effective.
+---
+
 # Immutable X Integration
 
-## What it IMX?
+## What is IMX?
 
 Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at reducing the environmental impact of NFT transactions while ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Integration with Immutable X can significantly enhance the user experience by making transactions faster and more cost-effective.
 
@@ -13,6 +21,23 @@ The integration involves registering an IMX user, minting, and transferring IMX 
 ### Step 1: Register IMX User
 
 Registering a user on Immutable X is the initial step for IMX integration. This is done through the `Register IMX User` endpoint.
+
+#### Endpoint:
+
+- **URL**: `https://api.mintology.app/v1/{projectId}/imx/register`
+- **Method**: `POST`
+- **Important**: Make this call from the back-end.
+
+#### Path Parameters:
+
+- `projectId` (string, required): Your project ID found on your dashboard.
+
+#### Body Parameters:
+
+- `email` (string, required): The email of the user you want to register for.
+- `username` (string, optional): The username that will be tied to this private key/wallet.
+
+#### Example:
 
 ```javascript
 const axios = require('axios');
@@ -41,6 +66,8 @@ registerIMXUser();
 
 Once the user is registered on IMX, the next step is to mint an IMX item using the `Mint IMX Item` endpoint.
 
+#### Example:
+
 ```javascript
 async function mintIMXItem() {
   const response = await axios.post(
@@ -67,6 +94,8 @@ mintIMXItem();
 ### Step 3: Transfer IMX Item
 
 The final step in IMX integration is transferring the minted IMX item to another user using the Transfer IMX Item endpoint.
+
+#### Example:
 
 ```javascript
 async function transferIMXItem() {
