@@ -1,14 +1,13 @@
 import os
 import datetime
 
-# Pathway to folder I want to look through.
-
+# Pathway to folder
 rootdir = os.getcwd()
 
-# Pathway to file that is collecting the TODO list.
+# Pathway to file
 text_file_location = rootdir + "/README.md"
 
-# Opens and writes the TODO.txt file.
+# Opens and writes the README file.
 README_file = open(text_file_location, "w")
 
 print("working")
@@ -40,5 +39,5 @@ for file in sorted(os.listdir()):
 # end of all for loops
 # Prints the last date modified for convenience.
 # README_file.write("Last modified: " + str(datetime.datetime.now()))
-# Closes the TODO_file
+# Closes the README_file
 README_file.close()
