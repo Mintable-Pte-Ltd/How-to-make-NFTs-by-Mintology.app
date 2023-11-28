@@ -6,8 +6,6 @@ title: Mintology API Overview
 description: Here's a overview of the Mintology API, covering various endpoints and processes
 ---
 
-test changes
-
 # Mintology API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
