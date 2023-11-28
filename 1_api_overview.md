@@ -6,6 +6,8 @@ title: Mintology API Overview
 description: Here's a overview of the Mintology API, covering various endpoints and processes
 ---
 
+check auto generation works
+
 # Mintology API Overview
 
 Here's a overview of the Mintology API, covering various endpoints and processes:
