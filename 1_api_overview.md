@@ -1,12 +1,10 @@
 ---
-hidden: false
+hidden: falsegi
 # slug: overview
 category: 64e5f94ae377a50070c31bc9
 title: Mintology API Overview
 description: Here's a overview of the Mintology API, covering various endpoints and processes
 ---
-
-check auto generation works
 
 # Mintology API Overview
 
@@ -120,5 +118,3 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Purpose**: Grants a complimentary NFT to the user's wallet.
    - **Use Cases**: Suitable for purposes like discount vouchers or proof of attendance tokens.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/claim).
-
----

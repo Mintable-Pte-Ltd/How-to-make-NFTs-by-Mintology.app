@@ -67,4 +67,6 @@ Ready to dive into the world of NFTs? **[Sign up for Mintology](https://mintolog
 
 For personalized guidance and support, chat with our specially trained ChatGPT, a Mintology Developer Support Expert. This AI-powered assistant can provide detailed answers to your queries, helping you make the most of Mintology's features.
 
-**[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience
+**[Chat with a Mintology Expert](https://chat.openai.com/g/g-Uuum7X2ru-mintology-developer-support-expert)** for real-time assistance and insights. Leverage this unique opportunity to enhance your NFT project development experience.
+
+---
