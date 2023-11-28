@@ -101,13 +101,13 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Action**: Modifies a specific project with new details.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-update).
 5. **[Remove Projects](https://docs.mintology.app/reference/projects-remove)**:
-   - **Action**: Extinguishes a specified project from the platform.
+   - **Action**: Deletes a specified project from the platform.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-remove).
 6. **[Mint Config Update](https://docs.mintology.app/reference/projects-mint-update)**:
-   - **Action**: This operation allows enabling or disabling of the mint. However, this can only be toggled after the project has been successfully deployed.
+   - **Action**: This operation allows enabling or disabling minting (see `mint` endpoint). However, this can only be toggled after the project has been successfully deployed.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-mint-update).
 7. **[Claim Config Update](https://docs.mintology.app/reference/projects-claim-update)**:
-   - **Action**: This operation allows enabling or disabling of the claim. However, this can only be toggled after the project has been successfully deployed.
+   - **Action**: This operation allows enabling or disabling claiming (see `claim` endpoint). However, this can only be toggled after the project has been successfully deployed.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/projects-claim-update).
 8. **[Deploy Projects](https://docs.mintology.app/reference/projects-deploy)**:
    - **Action**: Launches a specified project for token minting.
@@ -116,35 +116,35 @@ Here's a overview of the Mintology API, covering various endpoints and processes
 ### Mintable Wallets
 
 1. **[Create Mintable Wallet](https://docs.mintology.app/reference/custodial-wallets-create)**:
-   - **Action**: Establishes a new Mintable Wallet and Mintable account, enabling users to claim private key custody.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-create)​`​.
+   - **Action**: Creates a new Mintable Wallet and Mintable account, enabling users to claim private key custody.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-create).
 2. **[Request To Export](https://docs.mintology.app/reference/custodial-wallets-exports-request)**:
    - **Action**: Commences the process for user custody claim of their Mintable Wallet.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-request)​`​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-request).
 3. **[Approve Export](https://docs.mintology.app/reference/custodial-wallets-exports-approve)**:
    - **Action**: Transmits the Mintable wallet private key to the user, necessitating a request_id and OTP for authorization.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-approve)​`.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-exports-approve).
 4. **[Remove Mintable Wallet](https://docs.mintology.app/reference/custodial-wallets-remove)**:
    - **Action**: Irrevocably deletes the private key from Mintology's systems post user custody claim of their Mintable Wallet.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-remove)​`.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/custodial-wallets-remove).
 
 ### Preminting NFTs
 
 1. **[List Premints](https://docs.mintology.app/reference/premints-list)**:
    - **Action**: Yields a list of premint items, arrayed by updated date with latest premints at the forefront.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-list)​​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-list).
 2. **[Create Premints](https://docs.mintology.app/reference/premints-create)**:
-   - **Action**: Fashions token details like name, image, animation_url, etc. for premint items.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-create)​.
+   - **Action**: Generates token details like `name`, `image`, `animation_url`, etc. for premint items.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-create).
 3. **[Retrieve Premints](https://docs.mintology.app/reference/premints-retrieve)**:
-   - **Action**: Fetches premint details like name, image, animation_url, etc. for specified premint items.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-retrieve)​.
+   - **Action**: Fetches premint details like 'name', 'image', `animation_url`, etc. for specified premint items.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-retrieve).
 4. **[Remove Premints](https://docs.mintology.app/reference/premints-remove)**:
    - **Action**: Extinguishes a specified premint entity.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-remove)​​.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-remove).
 5. **[Import Premints](https://docs.mintology.app/reference/premints-import)**:
-   - **Action**: Import token details like name, image, animation_url and etc.
-   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-import)​.
+   - **Action**: Import token details like `name`, `image`, `animation_url` and etc.
+   - **Reference**: [Documentation Source](https://docs.mintology.app/reference/premints-import).
 
 ### IMX (Immutable X) Endpoints
 
@@ -211,8 +211,8 @@ The following section outlines the other essential pre-requisites you'll require
 
 **Mintable Wallet** (If utilizing Mintable Wallets feature):
 
-- **Description**: A special type of wallet created on Mintology that allows users to claim custody of their private keys.
-- **How to Obtain**: Generated via the [Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API.
+- **Description**: A wallet managed and secured by Mintology; it is mapped to the user's email address, and the user can interact with it through [Mintable](https://mintable.com).
+- **How to Obtain**: Generated via the [Mintable Wallets endpoint](https://docs.mintology.app/reference/custodial-wallets-create) of the Mintology API. A Mintable wallet will also be automatically created when a user tried to `mint` or `claim` an NFT, if they do not already have one.
 
 **Ethereum Layer 1 Account** (If utilizing IMX Endpoints):
 
@@ -226,7 +226,7 @@ The following section outlines the other essential pre-requisites you'll require
 
 **Metadata** (If pre-minting or updating metadata):
 
-- **Description**: Information describing the NFTs including attributes like name, image, animation_url, etc.
+- **Description**: Information describing the NFTs including attributes like `name`, `image`, `animation_url`, etc.
 - **How to Prepare**: As per the [Preminting NFTs](https://docs.mintology.app/reference/premints) and [Update NFT Metadata](https://docs.mintology.app/reference/metadata-update) endpoints documentation.
 
 **OTP** (One-Time Password) (If exporting Mintable Wallet):
@@ -250,7 +250,7 @@ Welcome to the Mintology APIs! As you embark on your journey to integrate and in
 
 ### Basic Pre-requisites
 
-Before making any API calls, ensure you're authorized. Include the following headers in your API requests:
+Before making any API calls, ensure you're authorized. Include the following headers in your API requests.
 
 ```json
 {
@@ -264,24 +264,23 @@ To find out how to get your API Key and other pre-requisites, look through **[Pr
 
 Creating a project is the initial step to operate on the Mintology platform. A project acts as a container for your NFTs and associated operations.
 
-There are 3 types of projects:
+In your project, you can use three types of Smart Contract:
 
 - #### Shared
   Mint to the Mintology shared contract. Your NFTs will be visible in the shared Mintology store.
 - #### Dedicated
   Create dedicated contract for your NFTs. You will have your own store on our marketplace.
 - #### Existing
-  Mint your NFTs to your existing smart contracts created on Mintology.
+  Mint your NFTs to your existing smart contracts created on Mintology (applicable only if you already created another project with a dedicated contract).
 
-### Creating a project using API:
+### Creating a project using API
 
 Create a project using the [Create Projects](https://docs.mintology.app/reference/projects-create) endpoint, this method of creating a project gives more options that can be customised.
 
-#### Endpoint:
+#### Endpoint
 
 - **URL**: `https://api.mintology.app/v1/projects`
 - **Method**: `POST`
-- **Important**: Make this call from the back-end.
 
 #### Headers:
 
@@ -329,23 +328,22 @@ Upon successful project creation, you'll receive a response containing the `proj
 
 ### Creating a project using Dashboard:
 
-You can also create a project though the [Mintology web app](https://dashboard.mintology.app) which will have less inputs available, you can also find your Project ID there.
+You can also create a project though the [Mintology web app](https://dashboard.mintology.app).
 
 ## Using Mintology
 
 With a project created, you can now proceed to do any of the following, you can follow the recommended flow in the given order:
 
 - [Premint NFTs](https://docs.mintology.app/docs/4_premint)
-- [Create Mintable Wallets](https://docs.mintology.app/docs/5_custodial-wallets)
 - [Mint and Claim NFTs](https://docs.mintology.app/docs/6_mint_and_claim)
 - [NFT Metadata](https://docs.mintology.app/docs/7_nft_metadata)
 - [Token Gating](https://docs.mintology.app/docs/8_token_gating) (you will need claimed or minted NFTs for this)
-- [Immutable X Integration](https://docs.mintology.app/docs/9_imx_integration)
+- _Optional_ (if you intend to deploy your NFTs on Immutable X's layer 2): [Immutable X Integration](https://docs.mintology.app/docs/9_imx_integration)
 ---
 
 # Preminting NFTs
 
-Pre-minting is the process of preparing NFT metadata and assets before the actual on-chain minting happens.
+Pre-minting is the process of preparing NFT metadata and assets, before the actual on-chain minting happens.
 
 **IMPORTANT**: Please note that your users will not be able to mint or claim more items than what you have preminted. You can add more items anytime, even after the project has been deployed.
 
@@ -369,7 +367,7 @@ The preminting process typically involves uploading NFT metadata like name, desc
 
 Please note that the metadata will either need to be self-hosted or you can create or add it via the platform and we will store the metadata on our end. The NFT metadata includes name, image url, animation url (optional), description (optional), other attributes (optional).
 
-Note: We also offer a 10 year guarantee for data hosted on our server
+**Note**: We also offer a 10 year guarantee for data hosted on our server.
 
 ### Preminting NFT
 
