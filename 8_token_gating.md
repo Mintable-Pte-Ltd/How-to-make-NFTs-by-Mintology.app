@@ -42,17 +42,17 @@ Firstly, you'll need to make a request to the Authorize endpoint to check for NF
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function checkNFTOwnership() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/authorize',
+    "https://api.mintology.app/v1/{projectId}/authorize",
     {
-      walletAddress: 'walletAddress',
+      walletAddress: "walletAddress",
     },
     {
       headers: {
-        'Api-Key': 'Your API Key',
+        "Api-Key": "Your API Key",
       },
     }
   );
@@ -72,11 +72,11 @@ async function grantAccess() {
 
   if (ownershipData.authorized) {
     // User has the NFT, grant access
-    console.log('Access granted');
+    console.log("Access granted");
     // Redirect to special page, grant discount, etc.
   } else {
     // User does not have the NFT, deny access
-    console.log('Access denied');
+    console.log("Access denied");
     // Redirect to a different page, show an error message, etc.
   }
 }
@@ -87,3 +87,5 @@ grantAccess();
 ### Alternatives
 
 You can also use the **[List Authorised Tokens](https://docs.mintology.app/reference/authorize-inventory)** endpoint to get the list of tokens that a user owns from a particular collection and control what is accessible for the user through that information.
+
+---

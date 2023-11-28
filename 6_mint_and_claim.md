@@ -78,21 +78,21 @@ curl -X POST https://api.example.com/mint   -H "api-key: YOUR_API_KEY"   -d '{
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function mintNFT() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/mint',
+    "https://api.mintology.app/v1/{projectId}/mint",
     {
       metadata: {
-        name: 'Unique NFT',
-        image: 'https://example.com/image.png',
+        name: "Unique NFT",
+        image: "https://example.com/image.png",
       },
-      wallet_address: '0x12345...',
+      wallet_address: "0x12345...",
     },
     {
       headers: {
-        'Api-key': 'YOUR_API_KEY',
+        "Api-key": "YOUR_API_KEY",
       },
     }
   );
@@ -125,17 +125,17 @@ This endpoint will mint a free NFT to your user's wallet, which can be a Mintabl
 #### Example Request (Node.js):
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 async function claimNFT() {
   const response = await axios.post(
-    'https://api.mintology.app/v1/{projectId}/claim',
+    "https://api.mintology.app/v1/{projectId}/claim",
     {
-      wallet_address: '0x12345...',
+      wallet_address: "0x12345...",
     },
     {
       headers: {
-        'Api-key': 'YOUR_API_KEY',
+        "Api-key": "YOUR_API_KEY",
       },
     }
   );
@@ -146,3 +146,5 @@ claimNFT();
 ```
 
 After claiming, check the event logs to confirm the NFT's status on the Mintology dashboard.
+
+---
