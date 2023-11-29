@@ -14,26 +14,30 @@ print("working")
 
 print(text_file_location)
 
-
-for file in sorted(os.listdir()):
-    slug = False
-    print(file)
-    if str(file).endswith(".md") and str(file) != "README.md":
+for root, dirs, files in os.walk(rootdir):
+    dirs.sort()
+    files.sort()
+    for file in files:
+        slug = False
         print(file)
-        print("working in files with .md extension")
-        open_file = open(rootdir + "/" + file, "r")
-        print(file)
-        for line in open_file:
-            if line.startswith("---"):
-                if slug == False:
-                    slug = True
-                    continue
-                else:
-                    slug = False
-            if not slug:
-                README_file.write(line)
-        # Closes open_file
-        open_file.close()
+        if str(file).endswith(".md") and str(file) != "README.md":
+            print(file)
+            print("working in files with .md extension")
+            open_file = open(
+                os.path.join(root, file),
+            )
+            print(file)
+            for line in open_file:
+                if line.startswith("---"):
+                    if slug == False:
+                        slug = True
+                        continue
+                    else:
+                        slug = False
+                if not slug:
+                    README_file.write(line)
+            # Closes open_file
+            open_file.close()
 
 
 # end of all for loops

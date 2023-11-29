@@ -183,6 +183,8 @@ Here's a overview of the Mintology API, covering various endpoints and processes
    - **Purpose**: Grants a complimentary NFT to the user's wallet.
    - **Use Cases**: Suitable for purposes like discount vouchers or proof of attendance tokens.
    - **Reference**: [Documentation Source](https://docs.mintology.app/reference/claim).
+
+   
 ---
 
 # Pre-requisites
@@ -441,13 +443,13 @@ Let us know if you have any other questions!
 
 # Mintable Wallets
 
-Once you have preminted NFTs, you would need to create wallets for your users to store the NFTs. Mintology provides a way to create custodial wallets, where users can later claim custody of their private keys. This process also creates a Mintable account for the users.
+Once you have preminted NFTs, you are ready to start minting NFTs for your users. If your users don't have an Ethereum wallet, Mintology provides an easy way to create custodial wallets. This process also creates a Mintable account for the users, where they can see all their NFTs.
 
 ## What are Mintable Wallets
 
 ### The Issue
 
-A crypto wallet is basically at its core is a set of keys (private keys, to be precise) that need to be kept ultra-secret and are used to sign messages. There are lots of noncustodial wallets (like Metamask, Coinbase, and more) out there, but they demand your users to be crypto-savvy and take the whole responsibility of keeping their private key or seed under wraps.
+A crypto wallet is basically at its core is a set of keys that need to be kept secret, and are used to sign transactions. There several non-custodial wallets (like Metamask, Coinbase, and others) out there, but they demand your users to be crypto-savvy and take the whole responsibility of keeping their private key under wraps.
 
 ### Mintology's solution
 
@@ -455,11 +457,11 @@ Mintology allows you to offer custodial wallets to your users. No crypto jargon,
 
 ### The User’s Journey
 
-Some users might get curious and want to dive deeper, deciding to take charge of their assets by themselves. They can do this right from their profile page on [Mintable](https://mintable.com), but you can control the entire process from your own website using the Mintology API. Designed with security at its core, the API ensures your users have truly taken control of their key before it gets deleted from our system.
+Some users might get curious and want to dive deeper, deciding to take charge of their assets by themselves. They can do this right from their profile page on [Mintable](https://mintable.com), or you can control the entire process from your own website using the Mintology API. Designed with security at its core, the API ensures your users have truly taken control of their key before it gets deleted from our system.
 
 ## How to use the APIs
 
-**IMPORTANT**: Before you start using the APIs, make sure that you have enabled Mintable Wallets on your Settings page on [Mintology web app](https://dashboard.mintology.app)
+**IMPORTANT**: Before you start using the APIs, make sure that you have enabled Mintable Wallets on your [Mintology Settings page](https://dashboard.mintology.app/settings).
 
 Below are the steps to create a custodial wallet:
 
@@ -520,8 +522,6 @@ If you choose to let your users take control of their key from your website, her
 2. Get the user to share the OTP received from Mintable, and pass it to the **[Approve Export](https://docs.mintology.app/reference/custodial-wallets-exports-approve)** endpoint.
 
 3. Hand over the key to your user, making sure they grasp the big deal of taking control and have jotted down their key somewhere safe. **Remember, it's crucial to spell this out to them clearly, and this is your responsibility!**
-
-4. Ask Mintology to erase the private key from Mintable's database through **[Remove Mintable Wallets](https://docs.mintology.app/reference/custodial-wallets-remove)** endpoint.
 
 ## A Peek into Encryption Technicalities 🔐
 
