@@ -241,7 +241,7 @@ The following section outlines the other essential pre-requisites you'll require
 - **Description**: A unique identifier for the export request, used to approve the export of a Mintable Wallet.
 - **How to Obtain**: Generated during the [Request To Export process](https://docs.mintology.app/reference/custodial-wallets-exports-request).
 ---
-Test
+
 # Quickstart Guide
 
 ## Getting Started with Mintology APIs
