@@ -15,17 +15,20 @@ jobs:
       - uses: actions/checkout@v4
         name: Check out current commit
 
+      - name: Generate new README.md
+        run: python ./.github/workflows/updateReadme.py
+        
       - name: Check if there are any changes
         id: verify_diff
         run: |
           git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: Commit and Push
+      - name: Commit
+        uses: actions/checkout@v4
         if: steps.verify_diff.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          python ./.github/workflows/updateReadme.py
+      - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
