@@ -13,6 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        name: Check out current commit
+
+      - name: Check if there are any changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and Push
+        if: steps.verify_diff.outputs.changed == 'true'
+        uses: actions/checkout@v4
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - run: |
