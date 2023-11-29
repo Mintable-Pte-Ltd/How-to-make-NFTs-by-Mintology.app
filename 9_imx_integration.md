@@ -10,7 +10,7 @@ description: Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed
 
 ## What is IMX?
 
-Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at reducing the environmental impact of NFT transactions while ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Integration with Immutable X can significantly enhance the user experience by making transactions faster and more cost-effective.
+Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Please check the official pages by [Immutable](https://www.immutable.com/) to understand the differences and implications of using this platform rather than Ethereum.
 
 ## How to use the API
 

@@ -12,7 +12,7 @@ description: Using these APIs, developers can restrict access to specific conten
 
 ## How Token Gating Works
 
-Using these APIs, developers can restrict access to specific content, ensuring only those with a particular NFT can view it. This functionality can be leveraged for exclusive content, premium experiences, and more.
+Using these APIs, developers can restrict access to specific content, ensuring only those with a particular NFT (or any NFT from a specific collection) can view it. This functionality can be leveraged for exclusive content, premium experiences, and more.
 
 ## How to use the API
 
@@ -20,9 +20,11 @@ In order to demonstrate authorization based on NFT ownership and grant access ac
 
 ## Authorization Based on NFT Ownership
 
+Please note that this is just an example. Check the endpoint documentation for more details (like checking external contracts, or using NFT attributes).
+
 ### Step 1: Set up the Authorization Check
 
-Firstly, you'll need to make a request to the Authorize endpoint to check for NFT ownership based on the user's email address.
+Firstly, you'll need to make a request to the Authorize endpoint to check for NFT ownership based on the user's email or wallet address.
 
 #### Endpoint:
 
@@ -36,7 +38,7 @@ Firstly, you'll need to make a request to the Authorize endpoint to check for NF
 
 #### Body Parameters:
 
-- `walletAddress` (string, required): The walletAddress of the user you want to check NFT ownership for.
+- `walletAddress` or `email` (string, required): The wallet address or email of the user you want to check NFT ownership for.
 - `token_id` (string, optional): This is the token id of the specific NFT token within the contract and it is optional; if absent, any token in the contract will authorize the wallet.
 
 #### Example Request (Node.js):

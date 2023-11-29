@@ -8,17 +8,17 @@ description: Use the NFT metadata endpoints to update your NFT metadata and also
 
 # NFT Metadata
 
-**IMPORTANT**: Please note that NFT Metadata endpoints work on minted tokens, for premit NFT please refer to **[Premint](https://docs.mintology.app/reference/premints)** endpoints.
+**IMPORTANT**: Please note that NFT Metadata endpoints work on tokens already minted on the blockchain, for premit NFT please refer to **[Premint](https://docs.mintology.app/reference/premints)** endpoints.
 
 ## What it is?
 
-Use the NFT metadata endpoints to update your NFT metadata and also retrieve it ('Retrieve' coming soon).
+Use the NFT metadata endpoints to update your NFT metadata. The metadata is publicly accessible from this URL schema: `https://metadata.mintology.app/{projectId}/{tokenId}`
 
 ## How to use the API
 
-**[Update NFT Metadata](https://docs.mintology.app/reference/metadata-update)** endpoint alters NFT metadata encompassing details like token name, image, animation_url, etc. You will need the Project ID and Token ID of the NFT metadata you want to update.
+**[Update NFT Metadata](https://docs.mintology.app/reference/metadata-update)** endpoint alters NFT metadata encompassing details like token `name`, `image`, `animation_url`, etc. You will need the Project ID and Token ID of the NFT metadata you want to update.
 
-- **URL**:`https://api.mintology.dev/{projectId}/metadata/{tokenId}`
+- **URL**: `https://api.mintology.dev/{projectId}/metadata/{tokenId}`
 - **Method**: `PUT`
 - **Important**: Make this call from the back-end.
 
@@ -28,7 +28,7 @@ Use the NFT metadata endpoints to update your NFT metadata and also retrieve it 
 
 #### Body Parameters:
 
-- `metadata` (object, optional): If absent, the metadata defined in the project will be used. Otherwise, it will mint a new NFT with the new metadata object you passed in.
+- `metadata` (object)
   - `name` (string, required): Name of the item.
   - `image` (string, required): URL to the image of the item (350 x 350 recommended).
   - `animation_url` (string, optional): URL to a multimedia attachment for the item.
