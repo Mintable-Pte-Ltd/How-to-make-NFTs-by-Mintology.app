@@ -22,10 +22,9 @@ jobs:
 
       - name: Commit and Push
         if: steps.verify_diff.outputs.changed == 'true'
-        uses: actions/checkout@v4
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - run: |
+        run: |
           python ./.github/workflows/updateReadme.py
           git config user.name github-actions
           git config user.email github-actions@github.com
