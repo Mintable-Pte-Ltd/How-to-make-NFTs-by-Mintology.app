@@ -21,11 +21,11 @@ jobs:
       - name: Check if there are any changes
         id: verify_diff
         run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet . || echo "::set-output name=new_readme_exist::true"
 
       - name: Commit
         uses: actions/checkout@v4
-        if: steps.verify_diff.outputs.changed == 'true'
+        if: steps.verify_diff.outputs.new_readme_exist == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - run: |
