@@ -1,5 +1,5 @@
 ---
-hidden: falsegi
+hidden: false
 # slug: overview
 category: 64e5f94ae377a50070c31bc9
 title: Mintology API Overview
