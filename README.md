@@ -561,39 +561,37 @@ Letting a user claim custody of their wallet is a bit complex, do reach out to [
 
 **IMPORTANT**: Before you start using the APIs, make sure that you have deployed your project and enabled Claiming and Minting through the **[Claim Config Update](https://docs.mintology.app/reference/projects-claim-update)** and **[Mint Config Update](https://docs.mintology.app/reference/projects-mint-update)** endpoints or through your Project Dashboard page on [Mintology web app](https://dashboard.mintology.app).
 
-Once the wallets are set up for your users, you can proceed to mint or claim NFTs into these wallets.
-
 ## How Minting and Claiming Works
+
+Both `mint` and `claim` are designed to mint an NFT directly into a user's wallet. If you have enabled Mintable Wallets, you can mint into an email address: the system will check if the user already have a Mintable wallet, otherwise it will create one for them automatically.
 
 ### Mint
 
-Use the **[Mint](https://docs.mintology.app/reference/mint)** endpoint to mint the NFT, including metadata as an object in the request body.
-This API endpoint is designed for minting NFTs straight into a user's wallet. Ideal for selling NFTs, targeted airdrops, or minting collectibles. Supports both custom Mintable Wallets and standard crypto wallets.
+Use the **[Mint](https://docs.mintology.app/reference/mint)** endpoint to mint the NFT, including metadata as an object in the request body. Ideal for selling NFTs, targeted airdrops, or minting collectibles. Supports both custom Mintable Wallets and standard crypto wallets.
 
 ### Claim
 
-Use the **[Claim](https://docs.mintology.app/reference/claim)** endpoint to mint a free NFT to your user's wallet (which can be a Mintable Wallet, or their existing crypto wallet). This is the endpoint you should use for discount coupons, proof of attendance, and in general NFTs which you do not intend to sell.
+Use the **[Claim](https://docs.mintology.app/reference/claim)** endpoint to mint a free NFT. This is the endpoint you should use for discount coupons, proof of attendance, and in general NFTs which you do not intend to sell.
 
-Note: Keeping 'mint' and 'claim' endpoints separate simplifies analytics, making it easier to track each call's specific purpose.
+**Note**: Keeping 'mint' and 'claim' endpoints separate simplifies analytics, making it easier to track each call's specific purpose.
 
 ## How to use the API
 
-Note: If you don't pass in a metadata object - it will create a random NFT using your pre-mint data you've set up through the API endpoints or dashboard. But if you pass in a metadata object, it will mint a new NFT with the new metadata object you passed in.
+- If you don't pass in a metadata object—the system will create a random NFT using your pre-mint data you've set up through the API endpoints or dashboard.
+- If you pass in a metadata object, it will mint a new NFT with the new metadata object you passed in.
 
 ### Minting NFTs
 
-Minting is ideal for selling NFTs, targeted airdrops, or minting collectibles. You can mint NFTs directly into a user's wallet using the following endpoint:
-
-#### Endpoint:
+#### Endpoint
 
 - **URL**: `https://api.mintology.app/v1/{projectId}/mint`
 - **Method**: `POST`
 
-#### Path Parameters:
+#### Path Parameters
 
 - `projectId` (string, required): Your project ID found on your dashboard.
 
-#### Body Parameters:
+#### Body Parameters
 
 - `metadata` (object, optional): If absent, the metadata defined in the project will be used. Otherwise, it will mint a new NFT with the new metadata object you passed in.
   - `name` (string, required): Name of the item.
@@ -605,7 +603,7 @@ Minting is ideal for selling NFTs, targeted airdrops, or minting collectibles. Y
   - `subtitle` (optional, string): Short description or subtitle of the NFT, used for listing the item for sales.
 - `wallet_address` (string, required): Wallet address to mint the token to.
 
-#### Example Request:
+#### Example Request
 
 ```curl
 curl -X POST https://api.example.com/mint   -H "api-key: YOUR_API_KEY"   -d '{
@@ -626,7 +624,7 @@ curl -X POST https://api.example.com/mint   -H "api-key: YOUR_API_KEY"   -d '{
   }'
 ```
 
-#### Example Request (Node.js):
+#### Example Request (Node.js)
 
 ```javascript
 const axios = require("axios");
@@ -657,23 +655,21 @@ After minting, check the event logs to confirm the NFT's status on the Mintology
 
 ### Claiming NFTs
 
-Claiming is ideal for discount coupons, proof of attendance, or NFTs which you do not intend to sell. You can claim NFTs using the following endpoint:
-
 ```plaintext
 POST https://api.mintology.app/v1/{projectId}/claim
 ```
 
 This endpoint will mint a free NFT to your user's wallet, which can be a Mintable Wallet or their existing crypto wallet. The mint and claim endpoints are kept separate to simplify analytics and track each call's specific purpose.
 
-#### Path Parameters:
+#### Path Parameters
 
 - `projectId` (string, required): Your project ID found on your dashboard.
 
-#### Body Parameters:
+#### Body Parameters
 
 - `wallet_address` (string, required): Wallet address to mint the token to.
 
-#### Example Request (Node.js):
+#### Example Request (Node.js)
 
 ```javascript
 const axios = require("axios");
@@ -702,17 +698,17 @@ After claiming, check the event logs to confirm the NFT's status on the Mintolog
 
 # NFT Metadata
 
-**IMPORTANT**: Please note that NFT Metadata endpoints work on minted tokens, for premit NFT please refer to **[Premint](https://docs.mintology.app/reference/premints)** endpoints.
+**IMPORTANT**: Please note that NFT Metadata endpoints work on tokens already minted on the blockchain, for premit NFT please refer to **[Premint](https://docs.mintology.app/reference/premints)** endpoints.
 
 ## What it is?
 
-Use the NFT metadata endpoints to update your NFT metadata and also retrieve it ('Retrieve' coming soon).
+Use the NFT metadata endpoints to update your NFT metadata. The metadata is publicly accessible from this URL schema: `https://metadata.mintology.app/{projectId}/{tokenId}`
 
 ## How to use the API
 
-**[Update NFT Metadata](https://docs.mintology.app/reference/metadata-update)** endpoint alters NFT metadata encompassing details like token name, image, animation_url, etc. You will need the Project ID and Token ID of the NFT metadata you want to update.
+**[Update NFT Metadata](https://docs.mintology.app/reference/metadata-update)** endpoint alters NFT metadata encompassing details like token `name`, `image`, `animation_url`, etc. You will need the Project ID and Token ID of the NFT metadata you want to update.
 
-- **URL**:`https://api.mintology.dev/{projectId}/metadata/{tokenId}`
+- **URL**: `https://api.mintology.dev/{projectId}/metadata/{tokenId}`
 - **Method**: `PUT`
 - **Important**: Make this call from the back-end.
 
@@ -722,7 +718,7 @@ Use the NFT metadata endpoints to update your NFT metadata and also retrieve it 
 
 #### Body Parameters:
 
-- `metadata` (object, optional): If absent, the metadata defined in the project will be used. Otherwise, it will mint a new NFT with the new metadata object you passed in.
+- `metadata` (object)
   - `name` (string, required): Name of the item.
   - `image` (string, required): URL to the image of the item (350 x 350 recommended).
   - `animation_url` (string, optional): URL to a multimedia attachment for the item.
@@ -764,7 +760,7 @@ updateNFT();
 
 ## How Token Gating Works
 
-Using these APIs, developers can restrict access to specific content, ensuring only those with a particular NFT can view it. This functionality can be leveraged for exclusive content, premium experiences, and more.
+Using these APIs, developers can restrict access to specific content, ensuring only those with a particular NFT (or any NFT from a specific collection) can view it. This functionality can be leveraged for exclusive content, premium experiences, and more.
 
 ## How to use the API
 
@@ -772,9 +768,11 @@ In order to demonstrate authorization based on NFT ownership and grant access ac
 
 ## Authorization Based on NFT Ownership
 
+Please note that this is just an example. Check the endpoint documentation for more details (like checking external contracts, or using NFT attributes).
+
 ### Step 1: Set up the Authorization Check
 
-Firstly, you'll need to make a request to the Authorize endpoint to check for NFT ownership based on the user's email address.
+Firstly, you'll need to make a request to the Authorize endpoint to check for NFT ownership based on the user's email or wallet address.
 
 #### Endpoint:
 
@@ -788,7 +786,7 @@ Firstly, you'll need to make a request to the Authorize endpoint to check for NF
 
 #### Body Parameters:
 
-- `walletAddress` (string, required): The walletAddress of the user you want to check NFT ownership for.
+- `walletAddress` or `email` (string, required): The wallet address or email of the user you want to check NFT ownership for.
 - `token_id` (string, optional): This is the token id of the specific NFT token within the contract and it is optional; if absent, any token in the contract will authorize the wallet.
 
 #### Example Request (Node.js):
@@ -846,7 +844,7 @@ You can also use the **[List Authorised Tokens](https://docs.mintology.app/refer
 
 ## What is IMX?
 
-Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at reducing the environmental impact of NFT transactions while ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Integration with Immutable X can significantly enhance the user experience by making transactions faster and more cost-effective.
+Immutable X (IMX) is a layer-2 scaling solution for Ethereum, aimed at ensuring instant trade confirmation, massive scalability, and no gas fees without compromising user custody. Please check the official pages by [Immutable](https://www.immutable.com/) to understand the differences and implications of using this platform rather than Ethereum.
 
 ## How to use the API
 
