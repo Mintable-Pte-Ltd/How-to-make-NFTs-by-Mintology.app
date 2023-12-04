@@ -22,8 +22,6 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - yarn run build:packages --force
-      - sls openapi generate -c api.serverless.yml --region=$AWS_REGION --stage=$STAGE --public-only
   post_build:
     commands:
       - rdme guides 1_readme --key=$README_PROJECT_SECRET --version=1.0
