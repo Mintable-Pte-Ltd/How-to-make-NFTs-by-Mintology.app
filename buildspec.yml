@@ -1,0 +1,29 @@
+version: 0.2
+
+env:
+  git-credential-helper: yes
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18.x
+    commands:
+      - echo node -v
+      - node -v
+      - echo update npm...
+      - npm update -g npm
+      - echo npm -v
+      - npm -v
+      - echo install rdme...
+      - npm install -g rdme
+      - echo rdme -v
+      - rdme -v
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - yarn run build:packages --force
+      - sls openapi generate -c api.serverless.yml --region=$AWS_REGION --stage=$STAGE --public-only
+  post_build:
+    commands:
+      - rdme guides 1_readme --key=$README_PROJECT_SECRET --version=1.0
